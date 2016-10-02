@@ -7,15 +7,53 @@
 //
 
 import UIKit
+import BMSCore
+import BMSSecurity
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let backendURL = "https://alvi-app.mybluemix.net/"
+    let backendGUID = "37f8eebf-7879-4f8f-a1ad-d1874f432d71"
+    let tenantId = "37f8eebf-7879-4f8f-a1ad-d1874f432d71"
+    
+//    let backendGUID = "5e95097d-ad76-4712-9ba7-f741e716e107"
+//    let tenantId = "5e95097d-ad76-4712-9ba7-f741e716e107"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let mainViewController:MainViewController = MainViewController()
+        let navController: UINavigationController = UINavigationController(rootViewController: mainViewController)
+    
+        
+        
+        self.window?.rootViewController = navController;//making a view to root view
+        self.window?.makeKeyAndVisible();
+
+        BMSClient.sharedInstance.initialize(bluemixAppRoute: backendURL, bluemixAppGUID: backendGUID, bluemixRegion: BMSClient.Region.usSouth)
+        
+        let mcaAuthManager = MCAAuthorizationManager.sharedInstance
+        mcaAuthManager.initialize(tenantId: tenantId)
+        BMSClient.sharedInstance.authorizationManager = mcaAuthManager
+        BMSClient.sharedInstance.authorizationManager = MCAAuthorizationManager.sharedInstance
+
+//        let customResourceURL = backendURL+"/protected"
+//        print(customResourceURL)
+//        let request = Request(url: customResourceURL, method: HttpMethod.GET)
+//        let callBack:BMSCompletionHandler = {(response: Response?, error: NSError?) in
+//            if error == nil {
+//                print ("response: \(response?.responseText), no error")
+//            } else {
+//                print ("error: \(error)")
+//            }
+//        }
+//        
+//        request.send(completionHandler: callBack)
+        
         return true
     }
 

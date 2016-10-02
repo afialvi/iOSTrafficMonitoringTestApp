@@ -1,0 +1,6 @@
+framework module Pods_VehicleMonitoring {
+  umbrella header "Pods-VehicleMonitoring-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B53CC2D1DA04BD40033FF14 /* objclib-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53CC2C1DA04BD40033FF14 /* objclib-Bridging-Header.m */; };
+		2BC5DAD41DA145F2005FA3BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5DAD21DA145F2005FA3BC /* MapViewController.swift */; };
+		2BC5DAD51DA145F2005FA3BC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5DAD31DA145F2005FA3BC /* MapViewController.xib */; };
+		2BC5DAD81DA146B2005FA3BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5DAD61DA146B2005FA3BC /* MainViewController.swift */; };
+		2BC5DAD91DA146B2005FA3BC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5DAD71DA146B2005FA3BC /* MainViewController.xib */; };
 		2BFBE2301D9F292F00172A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBE22F1D9F292F00172A64 /* AppDelegate.swift */; };
 		2BFBE2321D9F292F00172A64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBE2311D9F292F00172A64 /* ViewController.swift */; };
 		2BFBE2351D9F292F00172A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFBE2331D9F292F00172A64 /* Main.storyboard */; };
@@ -14,6 +19,8 @@
 		2BFBE23A1D9F292F00172A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFBE2381D9F292F00172A64 /* LaunchScreen.storyboard */; };
 		2BFBE2451D9F292F00172A64 /* VehicleMonitoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBE2441D9F292F00172A64 /* VehicleMonitoringTests.swift */; };
 		2BFBE2501D9F292F00172A64 /* VehicleMonitoringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFBE24F1D9F292F00172A64 /* VehicleMonitoringUITests.swift */; };
+		2BFBE2601D9F297600172A64 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2BFBE25F1D9F297600172A64 /* Podfile */; };
+		C212E774A0AC1972C7CDFDE4 /* Pods_VehicleMonitoring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B27F34FA8A7CAA786BB9E70 /* Pods_VehicleMonitoring.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15496A78DB930F0A0502EA31 /* Pods-VehicleMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleMonitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleMonitoring/Pods-VehicleMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
+		2B53CC2B1DA04BD40033FF14 /* VehicleMonitoring-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VehicleMonitoring-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B53CC2C1DA04BD40033FF14 /* objclib-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "objclib-Bridging-Header.m"; sourceTree = "<group>"; };
+		2BC5DAD21DA145F2005FA3BC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2BC5DAD31DA145F2005FA3BC /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		2BC5DAD61DA146B2005FA3BC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2BC5DAD71DA146B2005FA3BC /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		2BFBE22C1D9F292F00172A64 /* VehicleMonitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleMonitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFBE22F1D9F292F00172A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BFBE2311D9F292F00172A64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,9 @@
 		2BFBE24B1D9F292F00172A64 /* VehicleMonitoringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VehicleMonitoringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFBE24F1D9F292F00172A64 /* VehicleMonitoringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMonitoringUITests.swift; sourceTree = "<group>"; };
 		2BFBE2511D9F292F00172A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BFBE25F1D9F297600172A64 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4B27F34FA8A7CAA786BB9E70 /* Pods_VehicleMonitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VehicleMonitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E072443DA473A3DCB509DD6 /* Pods-VehicleMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleMonitoring.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleMonitoring/Pods-VehicleMonitoring.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C212E774A0AC1972C7CDFDE4 /* Pods_VehicleMonitoring.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26081AE265FBE8064260C46F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B27F34FA8A7CAA786BB9E70 /* Pods_VehicleMonitoring.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2BFBE2231D9F292F00172A64 = {
 			isa = PBXGroup;
 			children = (
+				2BFBE25F1D9F297600172A64 /* Podfile */,
 				2BFBE22E1D9F292F00172A64 /* VehicleMonitoring */,
 				2BFBE2431D9F292F00172A64 /* VehicleMonitoringTests */,
 				2BFBE24E1D9F292F00172A64 /* VehicleMonitoringUITests */,
 				2BFBE22D1D9F292F00172A64 /* Products */,
+				ABC93AD6233C3E968236E2E7 /* Pods */,
+				26081AE265FBE8064260C46F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +132,12 @@
 				2BFBE2361D9F292F00172A64 /* Assets.xcassets */,
 				2BFBE2381D9F292F00172A64 /* LaunchScreen.storyboard */,
 				2BFBE23B1D9F292F00172A64 /* Info.plist */,
+				2B53CC2C1DA04BD40033FF14 /* objclib-Bridging-Header.m */,
+				2B53CC2B1DA04BD40033FF14 /* VehicleMonitoring-Bridging-Header.h */,
+				2BC5DAD21DA145F2005FA3BC /* MapViewController.swift */,
+				2BC5DAD31DA145F2005FA3BC /* MapViewController.xib */,
+				2BC5DAD61DA146B2005FA3BC /* MainViewController.swift */,
+				2BC5DAD71DA146B2005FA3BC /* MainViewController.xib */,
 			);
 			path = VehicleMonitoring;
 			sourceTree = "<group>";
@@ -125,6 +160,15 @@
 			path = VehicleMonitoringUITests;
 			sourceTree = "<group>";
 		};
+		ABC93AD6233C3E968236E2E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15496A78DB930F0A0502EA31 /* Pods-VehicleMonitoring.debug.xcconfig */,
+				4E072443DA473A3DCB509DD6 /* Pods-VehicleMonitoring.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BFBE2541D9F292F00172A64 /* Build configuration list for PBXNativeTarget "VehicleMonitoring" */;
 			buildPhases = (
+				507FAF120DA85838FF131E26 /* [CP] Check Pods Manifest.lock */,
 				2BFBE2281D9F292F00172A64 /* Sources */,
 				2BFBE2291D9F292F00172A64 /* Frameworks */,
 				2BFBE22A1D9F292F00172A64 /* Resources */,
+				66CC0E2B9EBB1A522FAE3194 /* [CP] Embed Pods Frameworks */,
+				B970F2BD039C01BAC0EA779A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BFBE23A1D9F292F00172A64 /* LaunchScreen.storyboard in Resources */,
+				2BC5DAD51DA145F2005FA3BC /* MapViewController.xib in Resources */,
 				2BFBE2371D9F292F00172A64 /* Assets.xcassets in Resources */,
+				2BFBE2601D9F297600172A64 /* Podfile in Resources */,
+				2BC5DAD91DA146B2005FA3BC /* MainViewController.xib in Resources */,
 				2BFBE2351D9F292F00172A64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,12 +301,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		507FAF120DA85838FF131E26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		66CC0E2B9EBB1A522FAE3194 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VehicleMonitoring/Pods-VehicleMonitoring-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B970F2BD039C01BAC0EA779A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VehicleMonitoring/Pods-VehicleMonitoring-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2BFBE2281D9F292F00172A64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2BFBE2321D9F292F00172A64 /* ViewController.swift in Sources */,
+				2B53CC2D1DA04BD40033FF14 /* objclib-Bridging-Header.m in Sources */,
+				2BC5DAD81DA146B2005FA3BC /* MainViewController.swift in Sources */,
+				2BC5DAD41DA145F2005FA3BC /* MapViewController.swift in Sources */,
 				2BFBE2301D9F292F00172A64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,23 +500,32 @@
 		};
 		2BFBE2551D9F292F00172A64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15496A78DB930F0A0502EA31 /* Pods-VehicleMonitoring.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VehicleMonitoring/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alvi.assignment.VehicleMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VehicleMonitoring/VehicleMonitoring-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2BFBE2561D9F292F00172A64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E072443DA473A3DCB509DD6 /* Pods-VehicleMonitoring.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VehicleMonitoring/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alvi.assignment.VehicleMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VehicleMonitoring/VehicleMonitoring-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +594,7 @@
 				2BFBE2561D9F292F00172A64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BFBE2571D9F292F00172A64 /* Build configuration list for PBXNativeTarget "VehicleMonitoringTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +603,7 @@
 				2BFBE2591D9F292F00172A64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BFBE25A1D9F292F00172A64 /* Build configuration list for PBXNativeTarget "VehicleMonitoringUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +612,7 @@
 				2BFBE25C1D9F292F00172A64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

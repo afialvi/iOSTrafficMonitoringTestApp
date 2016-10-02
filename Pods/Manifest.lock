@@ -1,0 +1,21 @@
+PODS:
+  - BMSAnalyticsAPI (2.0.0)
+  - BMSCore (2.0.1):
+    - BMSAnalyticsAPI (~> 2.0)
+  - BMSSecurity (2.0.0):
+    - BMSCore (~> 2.0)
+  - MQTTKit (0.1.0)
+
+DEPENDENCIES:
+  - BMSSecurity
+  - MQTTKit
+
+SPEC CHECKSUMS:
+  BMSAnalyticsAPI: 04dcc022b5123f3615c2de766a7cfc052a541ad1
+  BMSCore: c776498a6e1ce04905fbaf67a99b68b2f7d4c8e1
+  BMSSecurity: 8a18bc791c5186350a97caddad74122d5863be6b
+  MQTTKit: a4e6b8aa92db1aeae917d2b773fd72a7749937c4
+
+PODFILE CHECKSUM: b4dbd91d4156cddae64f511d2537f041d293a86e
+
+COCOAPODS: 1.0.1
