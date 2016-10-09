@@ -1,9 +1,10 @@
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/BMSAnalyticsAPI" "$PODS_CONFIGURATION_BUILD_DIR/BMSCore" "$PODS_CONFIGURATION_BUILD_DIR/BMSSecurity" "$PODS_CONFIGURATION_BUILD_DIR/MQTTKit"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/BMSAnalyticsAPI" "$PODS_CONFIGURATION_BUILD_DIR/BMSCore" "$PODS_CONFIGURATION_BUILD_DIR/BMSSecurity" "$PODS_CONFIGURATION_BUILD_DIR/MQTTClient" "$PODS_CONFIGURATION_BUILD_DIR/MQTTKit" "${PODS_ROOT}/GoogleMaps/Subspecs/Base/Frameworks" "${PODS_ROOT}/GoogleMaps/Subspecs/Maps/Frameworks" "${PODS_ROOT}/GooglePlaces/Frameworks"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GoogleMaps" "${PODS_ROOT}/Headers/Public/GooglePlaces"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/BMSAnalyticsAPI/BMSAnalyticsAPI.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/BMSCore/BMSCore.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/BMSSecurity/BMSSecurity.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MQTTKit/MQTTKit.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "BMSAnalyticsAPI" -framework "BMSCore" -framework "BMSSecurity" -framework "MQTTKit"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/BMSAnalyticsAPI/BMSAnalyticsAPI.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/BMSCore/BMSCore.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/BMSSecurity/BMSSecurity.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MQTTClient/MQTTClient.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MQTTKit/MQTTKit.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GoogleMaps" -isystem "${PODS_ROOT}/Headers/Public/GooglePlaces"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "Accelerate" -framework "BMSAnalyticsAPI" -framework "BMSCore" -framework "BMSSecurity" -framework "CoreData" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreText" -framework "GLKit" -framework "GoogleMaps" -framework "GoogleMapsBase" -framework "GoogleMapsCore" -framework "GooglePlaces" -framework "ImageIO" -framework "MQTTClient" -framework "MQTTKit" -framework "OpenGLES" -framework "QuartzCore" -framework "SystemConfiguration" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

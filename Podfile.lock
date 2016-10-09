@@ -1,21 +1,42 @@
 PODS:
   - BMSAnalyticsAPI (2.0.0)
-  - BMSCore (2.0.1):
+  - BMSCore (2.0.2):
     - BMSAnalyticsAPI (~> 2.0)
-  - BMSSecurity (2.0.0):
+  - BMSSecurity (2.0.2):
     - BMSCore (~> 2.0)
+  - GoogleMaps (2.1.0):
+    - GoogleMaps/Maps (= 2.1.0)
+  - GoogleMaps/Base (2.1.0)
+  - GoogleMaps/Maps (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
+  - GooglePlaces (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
+  - MQTTClient (0.8.5):
+    - MQTTClient/Core (= 0.8.5)
+  - MQTTClient/Core (0.8.5):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.8.5):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.8.5)
   - MQTTKit (0.1.0)
 
 DEPENDENCIES:
   - BMSSecurity
+  - GoogleMaps
+  - GooglePlaces
+  - MQTTClient
   - MQTTKit
 
 SPEC CHECKSUMS:
   BMSAnalyticsAPI: 04dcc022b5123f3615c2de766a7cfc052a541ad1
-  BMSCore: c776498a6e1ce04905fbaf67a99b68b2f7d4c8e1
-  BMSSecurity: 8a18bc791c5186350a97caddad74122d5863be6b
+  BMSCore: e74b97877f334745ec48f6308f65003300b04df9
+  BMSSecurity: 58e93c5007675312d140f48c8120b733fb720892
+  GoogleMaps: 06589b9a38097bce0cd6e90f0fd9b5e4b4a9344c
+  GooglePlaces: 16e96266483b8010e9f275399403647978523c86
+  MQTTClient: fca939bcd74aa70af2d8ee35f3e44f258f4e9888
   MQTTKit: a4e6b8aa92db1aeae917d2b773fd72a7749937c4
 
-PODFILE CHECKSUM: b4dbd91d4156cddae64f511d2537f041d293a86e
+PODFILE CHECKSUM: b7a49bd6fb582bb49fb3ebe9bc4aa2f3447c6a83
 
 COCOAPODS: 1.0.1

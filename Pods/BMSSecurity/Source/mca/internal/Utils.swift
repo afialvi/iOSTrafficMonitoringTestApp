@@ -126,7 +126,7 @@ public class Utils {
     //Return the App Name and Version
     internal static func getApplicationDetails() -> (name:String, version:String) {
         var version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
-        var name = Bundle(for:object_getClass(self)).bundleIdentifier
+        var name = Bundle.main.bundleIdentifier
         if name == nil {
             AuthorizationProcessManager.logger.error(message: "Could not retrieve application name. Application name is set to nil")
             name = "nil"
@@ -221,11 +221,11 @@ public class Utils {
             
             i+=1
             
-            if count == intLengthFixed {
+            if count == intLengthFixed - 1 {
                 break
             }
-            current = objPointer[objPointer.characters.index(objPointer.startIndex, offsetBy: count)]
             count+=1
+            current = objPointer[objPointer.characters.index(objPointer.startIndex, offsetBy: count)]
         }
         
         // mop things up if we ended on a boundary
@@ -429,7 +429,7 @@ public class Utils {
     //Return the App Name and Version
     internal static func getApplicationDetails() -> (name:String, version:String) {
         var version = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String
-        var name = NSBundle(forClass:object_getClass(self)).bundleIdentifier
+        var name = NSBundle.mainBundle().bundleIdentifier
         if name == nil {
             AuthorizationProcessManager.logger.error(message: "Could not retrieve application name. Application name is set to nil")
             name = "nil"

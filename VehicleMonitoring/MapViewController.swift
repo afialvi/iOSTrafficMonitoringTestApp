@@ -18,7 +18,7 @@ class MapViewController: UIViewController, UIWebViewDelegate{
         super.viewDidLoad()
         
         let mapUrl = "http://alvi-app.mybluemix.net/"
-        addLoadingView()
+//        addLoadingView()
         self.mapWebView.loadRequest(NSURLRequest(URL: NSURL(string: mapUrl)!))
         self.mapWebView.delegate = self
         
@@ -28,32 +28,5 @@ class MapViewController: UIViewController, UIWebViewDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func addLoadingView(){
-        loadingView = UIView(frame: CGRectMake(120, 200, 80, 80))
-        loadingView!.backgroundColor = UIColor.blackColor()
-        loadingView!.layer.cornerRadius = 5;
-        
-        
-        let activityView:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
-        
-        activityView.center = CGPointMake(loadingView!.frame.size.width / 2.0, 35);
-        activityView.startAnimating()
-        loadingView!.addSubview(activityView)
-        let lblLoading = UILabel(frame: CGRectMake(0, 48, 80, 30))
-        lblLoading.text = "Loading..."
-        lblLoading.textColor = UIColor.whiteColor()
-        lblLoading.textAlignment = NSTextAlignment.Center
-        loadingView!.addSubview(lblLoading)
-        self.view.addSubview(loadingView!)
-    }
-    
-    
-    func webViewDidFinishLoad(webView: UIWebView) {
-        self.loadingView?.hidden = true
-    }
-    func webViewDidStartLoad(webView: UIWebView) {
-        self.loadingView?.hidden = false
-    }
-
+ 
 }

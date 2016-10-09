@@ -7,96 +7,155 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0125C10FCF27143359B1A37A4E5E2B95 /* ChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BDF9F7012E3CB3C50EE08665CB80AC /* ChallengeHandler.swift */; };
-		044CB99A7BC085B58E26DD06E3E39E26 /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 996A4E03E5A7CFAFE72DDAC8CE68869A /* time_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0464410EE582D765FFB306DAA31C0521 /* AuthorizationRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0E6145CE292D233F06047A554725C /* AuthorizationRequestManager.swift */; };
-		0558766EF6EA715F36ABC631C7961DA9 /* BaseDeviceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F17ABBC2F577AA8DBF23255DA08F7EF /* BaseDeviceIdentity.swift */; };
-		07276BF2A023C30A7000BECB2D37D562 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 9803807142255889D23CE8EA58BC0F11 /* will_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		09BC87C44A187C83F3E83773D6E5DBE6 /* BaseAppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91132B078BDF5F2FFB67795B700295D5 /* BaseAppIdentity.swift */; };
-		108F139E1802071DA79A51EB4D3CFC63 /* AppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C12D8EF8A6F936FC4B45BB9EED6F7 /* AppIdentity.swift */; };
-		12AC8B3254D617674DD2C3323466DD1E /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2559C46BB3795C2C8F4E2C262251B3 /* AuthorizationRequest.swift */; };
-		1375C62A0C2C41C03FB35D770A7E727E /* RequestOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379AB07A7EDFEA3DC74EDFC4C2096DF1 /* RequestOptions.swift */; };
-		151F2F73C68E724C9C87B9187A8C4546 /* BMSSecurityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616DE1101B6EDFB59F51DC1C96FBCDA9 /* BMSSecurityConstants.swift */; };
-		1860EFE3C358B40B8D0857748DDA1F39 /* BMSURLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543758C293B143E79764EDE256B99D7 /* BMSURLSessionDelegate.swift */; };
+		0125C10FCF27143359B1A37A4E5E2B95 /* ChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7ECFD2A3229DFE47C94C1DB81EF7D /* ChallengeHandler.swift */; };
+		044CB99A7BC085B58E26DD06E3E39E26 /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = C432AA915CEE0D046FBBC25675421F82 /* time_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0464410EE582D765FFB306DAA31C0521 /* AuthorizationRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDDF1BA53DCA3A2EFDD8194D93EADA9 /* AuthorizationRequestManager.swift */; };
+		0558766EF6EA715F36ABC631C7961DA9 /* BaseDeviceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274BC978F2E436EF8E2A8CACB3E62869 /* BaseDeviceIdentity.swift */; };
+		07276BF2A023C30A7000BECB2D37D562 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAE1E184E7F12BA55C17478EB447024 /* will_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0770B158ABA5605CCDC0828ADB62DE2E /* MQTTClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 240C3195FE3EC56D21A7E513A7F25D4F /* MQTTClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09BC87C44A187C83F3E83773D6E5DBE6 /* BaseAppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64034082F05C02EFF23BF3B9C053A17A /* BaseAppIdentity.swift */; };
+		0A71A004BDE7588F8EB7F960D3341CE6 /* MQTTSSLSecurityPolicyDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BD508B2A4D14C29D224450B58BF5CE8C /* MQTTSSLSecurityPolicyDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		108F139E1802071DA79A51EB4D3CFC63 /* AppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75AA8F9A3E8BF7D3B8A8144721B2FFF /* AppIdentity.swift */; };
+		12AC8B3254D617674DD2C3323466DD1E /* AuthorizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5FFA2A8BFA91DA0306C244EF8FEE7 /* AuthorizationRequest.swift */; };
+		1375C62A0C2C41C03FB35D770A7E727E /* RequestOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3C048D2652B4C0B7FC155AA3A302E /* RequestOptions.swift */; };
+		151F2F73C68E724C9C87B9187A8C4546 /* BMSSecurityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C023C4C4AB337375C33FFA166425A54F /* BMSSecurityConstants.swift */; };
+		15ECB6BA495B2BEE48EFC73278BB5C5C /* MQTTSSLSecurityPolicyTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE144A6948FBB53C5470DAB0006D6D /* MQTTSSLSecurityPolicyTransport.m */; };
+		1860EFE3C358B40B8D0857748DDA1F39 /* BMSURLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B9BAC9486BC6F5871F340394A1894A /* BMSURLSessionDelegate.swift */; };
 		1877D07B3753C2016CDFDCE7A6D1418C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E362CF246DC424C52FCD4296E5EB075D /* Foundation.framework */; };
 		1D05B54B4CA7A7A5AB7CE72E83390D0F /* BMSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CB55F18A67CBFAE7DC6A1C87755273 /* BMSCore.framework */; };
-		1E614CC17C985A297CBB4D289B007018 /* UserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB06DFDE3A584016CE4D2D605642468 /* UserIdentity.swift */; };
-		1FF8D4F22DCEC85D859E8D6779404353 /* BMSCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E80B08A7734418835E7F772EF33F26E5 /* BMSCore-dummy.m */; };
-		274A0B335A6121EC092F2E2E1B0F00E5 /* MCAAppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB67EA81193F68CCF7F7C18E477D4735 /* MCAAppIdentity.swift */; };
-		27D8CD642851A57494098435B9B50B00 /* BMSSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = B8148BD4F17D10C7799F4A79B4BA3B14 /* BMSSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2913ED9F4D05A3DC629F443D7F07593C /* MQTTKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27358856F778C9EC301D7F33949795D0 /* MQTTKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BCA9A1A4DA741A30B646166EA88AD40 /* MCAUserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F766674394201CE020BD461A5A6329C1 /* MCAUserIdentity.swift */; };
-		30DC5402474DC305C6884E2552FE883D /* BMSAnalyticsAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2037560ACE96713DCDE1608BDBC7C9B4 /* BMSAnalyticsAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A0DB87C53368BAF9DE319480FE72D3A /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AB8044A8F39AF12CAF3155CE7DB3E5E3 /* messages_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3D0AF4EA35DD89BA0EE00693E13A7551 /* tls_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 34013CE238EC82A5322BF067AF0F1812 /* tls_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1E614CC17C985A297CBB4D289B007018 /* UserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8394F4C54DFE086CE0F3DB07DF91B1C3 /* UserIdentity.swift */; };
+		1FF8D4F22DCEC85D859E8D6779404353 /* BMSCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DB8A68BC32E8D9502F3593907DD78E /* BMSCore-dummy.m */; };
+		2647780A4C25B72048C747162FF527AC /* MQTTSSLSecurityPolicyEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D7ADB9C4DD3E53C3BA5B79097583BA45 /* MQTTSSLSecurityPolicyEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		274A0B335A6121EC092F2E2E1B0F00E5 /* MCAAppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFD8814C37E95A91B1C08B6482765 /* MCAAppIdentity.swift */; };
+		27D8CD642851A57494098435B9B50B00 /* BMSSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E2053477A9876991F17CD5CC1A20CC2 /* BMSSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2913ED9F4D05A3DC629F443D7F07593C /* MQTTKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56848066D32B5B665EBE4FC74529470C /* MQTTKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BCA9A1A4DA741A30B646166EA88AD40 /* MCAUserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804294C9B99083B01F00D90645735DBD /* MCAUserIdentity.swift */; };
+		30DC5402474DC305C6884E2552FE883D /* BMSAnalyticsAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A70995856720F3330F91EBE08F8A8724 /* BMSAnalyticsAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31E2552DF96CB9A48E649EBDB8F56C42 /* MQTTDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB4CA5EE6606D461C4CDA826FAE5A5C /* MQTTDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3256F2D2B8682DFFFBCBAEE4497F55D1 /* MQTTCFSocketEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C1C5F92D7D2FF339FBFBA43CFF5599 /* MQTTCFSocketEncoder.m */; };
+		32B91FFAD9FB63D586BE028F865C97E3 /* MQTTSSLSecurityPolicyDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4038D2F6A4F151FCDCD49077300FBC33 /* MQTTSSLSecurityPolicyDecoder.m */; };
+		3A0DB87C53368BAF9DE319480FE72D3A /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 868F65DBA100F780135C7C81D7FC1FB4 /* messages_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3D0AF4EA35DD89BA0EE00693E13A7551 /* tls_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = D92EFEE82127FEC6C692989B155C7EE1 /* tls_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3D5CCAAD3FFF202C65395AD5C40C38BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E362CF246DC424C52FCD4296E5EB075D /* Foundation.framework */; };
-		3EACB063EF5F764D2486203A60A7D395 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E362CF246DC424C52FCD4296E5EB075D /* Foundation.framework */; };
-		3F6D92FC5605C779E373384F993C78D7 /* BMSSecurity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B4F204BA905879F5BD3C0B4E52F0CC /* BMSSecurity-dummy.m */; };
-		46B637A8C923710FF3AAD128F97B19A1 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB21C5CFDA2EECA1B41C0ECE9DDC6C1C /* Queue.swift */; };
-		488C4E87F2E459CCB570D9D34B16B561 /* BMSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2A2352ADE3F4C5372B28D4E0CBB3EB /* BMSURLSession.swift */; };
-		48FCF59C74F334654636754212B0AE78 /* BMSSecurityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3789DA492B7B9113F8831CA7EC7A4968 /* BMSSecurityError.swift */; };
-		4A0667E0782C3FE9ED9002A19B532E47 /* BMSSecurity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7C45EE62E0B21FA9807DA3A8CBD96F /* BMSSecurity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BC610A03D6802669E2E35D8CF1D35D6 /* Pods-VehicleMonitoring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBEAB3E631A51CD146B989C2E43AC72 /* Pods-VehicleMonitoring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E5B033B9C474C02595F34D299965E6B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413A2F15FC146309381941C6C5518842 /* Utils.swift */; };
+		3DAF212740B059BCB0B7C0F06D77F6B2 /* MQTTInMemoryPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FE557627C992954C81137805039029 /* MQTTInMemoryPersistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F6D92FC5605C779E373384F993C78D7 /* BMSSecurity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 913EB4EA3B5A606603575B44AC85D60C /* BMSSecurity-dummy.m */; };
+		46B637A8C923710FF3AAD128F97B19A1 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F1C779DE606C810E0AD24F19E0B06E /* Queue.swift */; };
+		488C4E87F2E459CCB570D9D34B16B561 /* BMSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE8CBC90576F2ED5B2CBAE566857B9 /* BMSURLSession.swift */; };
+		48FCF59C74F334654636754212B0AE78 /* BMSSecurityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701B6A3CABB0E06EC80511963096BD88 /* BMSSecurityError.swift */; };
+		4A0667E0782C3FE9ED9002A19B532E47 /* BMSSecurity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7456CEF75DF71161A9AF6A025CB3612C /* BMSSecurity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DA4A6717ACCB3B039DCCBE4B455C2E3 /* Pods-VehicleMonitoring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E4BDFA86DD593FBB610C94DEE4A0F4 /* Pods-VehicleMonitoring-dummy.m */; };
+		4E5B033B9C474C02595F34D299965E6B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2E7D86928FF35DC62E483B099D2739 /* Utils.swift */; };
+		4ED0C60BB5FC6F3734D8F6EE673E485E /* MQTTCFSocketDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F631047B336406FDE661287BB53F2186 /* MQTTCFSocketDecoder.m */; };
 		4F9C383503E58211058609FC3F8C7309 /* BMSAnalyticsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BED12742B7FCB30E548F85FBF23D4F /* BMSAnalyticsAPI.framework */; };
 		50403BCF1747903D69F1B2047E59B15E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E362CF246DC424C52FCD4296E5EB075D /* Foundation.framework */; };
-		56F0133BD1BA4F398E691150D0BB039B /* AuthenticationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E76ECEAA8BEAD15563679E67C71517 /* AuthenticationContext.swift */; };
-		56F709BC804911BF7C233DD7636E81ED /* read_handle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAAF638D10F7218A0D74B6A594B5C9F /* read_handle.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5A7E5DC5F108FED7E7AE9D8601B20DF6 /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732D5368DA140AAD523AA9420061F3EA /* AuthorizationManager.swift */; };
-		5FEA0D9E0980A3B0DE0B291048958C62 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6A81BA453C908ED1BD13C3B1CACBDB /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6011D8BBF3B7D98DC395466C42A22A00 /* AuthorizationProcessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA712BE48B8836DF4688BB64DD9DEDE /* AuthorizationProcessManager.swift */; };
-		62F499F5B28900DCE265A6D2B27DF0FF /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AABE203B155FBFB59AA7BFCA9B4B791E /* net_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		66A47128FBA59D815FF9E4297185C51F /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C325E3232CC2CBEBD29933A9E135B /* util_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		66ED225680E2098558121A62129D141B /* MQTTKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CF774232B0D4A86F6799382FC67A00 /* MQTTKit-dummy.m */; };
-		67ACA60C7ACF5E0581A316B64E0A68B6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336AE515862403E292D0D008D804B8B7 /* Response.swift */; };
-		67B84A9120EE08C7C5E9B7F5E0EA70F2 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA9AA4DEF08680309220EAA0E84039 /* mosquitto.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		688969D8E62ACF0CF4440F089CF54BE8 /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5C920FF425FAE28014104E67354435 /* send_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6A2DB588400F6234DB5708F018F37AB0 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = E61410F543F298D2FB0DBD7EA5CA197A /* read_handle.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		717D7A1A12A93B47296DB454FC3CBB42 /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 4396A22E3CE7449784F9AD18BE1E24A6 /* util_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		71AD67AAFC26ED4869954BDDC5C8D275 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 84789F3CFADB7DC63D84D92671C030E8 /* send_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		734B54541ECD3F3211213A7C21968858 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB7B20A4786E9AB0BBE72BFABED920A /* Error.swift */; };
-		7E38B9917A22771150AB4C4CDB83A83C /* DeviceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204BC88FC1344B9C2540D41F74716560 /* DeviceIdentity.swift */; };
-		830E213877234012FCA56C69D7C71E8D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47409FEFEFCB272B4FA16B235F0AD55 /* Request.swift */; };
-		83B4EB139CBF11EDC38C97686A80266B /* MCAAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBF9AEBD578E7159A09124271E990D1 /* MCAAuthorizationManager.swift */; };
-		87F1B641948D16A442DACE672E77B888 /* BMSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52BFF18BB89B16641C75FA1B6CE1DD /* BMSClient.swift */; };
-		8930356E30C588BC5CD7D2150990D30B /* will_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = DED390206CC36AEB64D39A028BBA5B91 /* will_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56F0133BD1BA4F398E691150D0BB039B /* AuthenticationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2A1F533FC0B472F66F409BF9A89672 /* AuthenticationContext.swift */; };
+		56F709BC804911BF7C233DD7636E81ED /* read_handle.h in Headers */ = {isa = PBXBuildFile; fileRef = 402E013C8E35FF5FB5C5BA4B1DA6B97D /* read_handle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		59A903B5F3F0A442D444D2ED21F81ADF /* MQTTSessionLegacy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E9CCA99F488253958B2DA9DE6431A83 /* MQTTSessionLegacy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A7E5DC5F108FED7E7AE9D8601B20DF6 /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A312CB1A79282D496AE60003D7566315 /* AuthorizationManager.swift */; };
+		5FEA0D9E0980A3B0DE0B291048958C62 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9AE169A1306ED8FBD029A4AB42852B /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6004FEDD653CF7297C7FD5CB5035FE97 /* MQTTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4FF43985BD687868CB6EBFC5FD91 /* MQTTSession.m */; };
+		6011D8BBF3B7D98DC395466C42A22A00 /* AuthorizationProcessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305ADD6D44985F188FC5093925A5C9C9 /* AuthorizationProcessManager.swift */; };
+		62F499F5B28900DCE265A6D2B27DF0FF /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5B7D3CC65143E62BCA0D8309F4009 /* net_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		66A47128FBA59D815FF9E4297185C51F /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D31192D5FEDB1E6611C9F0A93F4B212 /* util_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		66ED225680E2098558121A62129D141B /* MQTTKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F14404E4886C0714B7BB8A3527284224 /* MQTTKit-dummy.m */; };
+		67ACA60C7ACF5E0581A316B64E0A68B6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF503C38FAB57E3898161A48087D906 /* Response.swift */; };
+		67B84A9120EE08C7C5E9B7F5E0EA70F2 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = BA39B90D2B744B73892611AA829897A9 /* mosquitto.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		687849FC82CF9BE953659957A3B64086 /* MQTTClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A75841789FDA73C9230D3DD9DC7916DF /* MQTTClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		688969D8E62ACF0CF4440F089CF54BE8 /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 27889ED869057DCE3BBE9C98EDCB4705 /* send_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6A2DB588400F6234DB5708F018F37AB0 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B722117058D9C67FED9B78A81282197 /* read_handle.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6DEDFDA3BE0AC1BB11EC47E5375EE5F6 /* MQTTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCC895CB452E77B02B598F85D0D6411 /* MQTTMessage.m */; };
+		6F76B03970F8212BEBF02F110516EE48 /* MQTTSSLSecurityPolicyTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3CD9ED1296FDD322CAD59DAB9F48F4 /* MQTTSSLSecurityPolicyTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7098F0A389C40B41D7346F0D9888247F /* MQTTSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F23B1FBDA792460B2F69CF3CF8E616 /* MQTTSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		717D7A1A12A93B47296DB454FC3CBB42 /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F58F459A2310255BCD623DF8A12CC2 /* util_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71AD67AAFC26ED4869954BDDC5C8D275 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 09AB3DD153D299CFBD33CAFFEB72E803 /* send_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		734B54541ECD3F3211213A7C21968858 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F2821AF6C74C6407DE31177952023 /* Error.swift */; };
+		75BAF48F8B61C56C90CC82873E196BA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E362CF246DC424C52FCD4296E5EB075D /* Foundation.framework */; };
+		7898EBF920BBFE9E9A62E96E3F23B1E8 /* MQTTCFSocketTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DD73F8DBD5AACE3EC660CF16D0CA150 /* MQTTCFSocketTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79FE715F133E471E5C297BD366BF0A4E /* MQTTCoreDataPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DD2BB17560D1F4528BB54AB459B2EC /* MQTTCoreDataPersistence.m */; };
+		7E38B9917A22771150AB4C4CDB83A83C /* DeviceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A9455F3EA33DA829DE465CF0051C5 /* DeviceIdentity.swift */; };
+		830E213877234012FCA56C69D7C71E8D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57C30EC82812EC619CD20CFDCD54E8E /* Request.swift */; };
+		83B4EB139CBF11EDC38C97686A80266B /* MCAAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F1DC9F8BC46D27AD091229FCA5BDA /* MCAAuthorizationManager.swift */; };
+		861076B27CC6C31B4981948383D59460 /* MQTTMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = C1AF7654D6148D38E88CE8D3F7380D97 /* MQTTMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87F1B641948D16A442DACE672E77B888 /* BMSClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9EAB2A5902297111CF67F3FF6E494F /* BMSClient.swift */; };
+		882D462BD1AE964A3E66145AF578A1FF /* MQTTCoreDataPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = 107976F15C6727DD3434C1A431D7EE2E /* MQTTCoreDataPersistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8930356E30C588BC5CD7D2150990D30B /* will_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C8FE2924411CA3167804C31FD6A9AE /* will_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8E99AD796292FA8675741C6DB68BC871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E362CF246DC424C52FCD4296E5EB075D /* Foundation.framework */; };
-		9124220B9CD2297FDA5F4184F5E528FE /* mosquitto.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD28407CE993C7950705F7C46DE4C71 /* mosquitto.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9616C85E055CB2B23A7772DA73398964 /* logging_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = F34B7A8A91D07E969BB6A6AC5207E2DA /* logging_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		97D30342DFCF5C243543A62545A1FC6E /* net_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E593C243300B05CE2BDCD3DA30D3842 /* net_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9B13FCD6661A2FCFE8C775F8C7A7AFDF /* Pods-VehicleMonitoring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E4BDFA86DD593FBB610C94DEE4A0F4 /* Pods-VehicleMonitoring-dummy.m */; };
-		9B68E6963B6A29C9819D486252DDDC30 /* AuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9E8631BDC9F399A3FC27ABD496FFC7 /* AuthenticationDelegate.swift */; };
-		A0465175B717622B14B43DE43976D909 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7045C3D5A07FCD26FB57FACCBF8270C1 /* BaseRequest.swift */; };
-		A5757BB44EF16DE950E72930732A3775 /* MCADeviceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D51D2390DD9613F10E52AADCB8430E /* MCADeviceIdentity.swift */; };
-		A749A3085F37ED433C354E24D528F828 /* MQTTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F45D321BE60FCFB4C6C80154EED822C /* MQTTKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C6FD897ED2CF672BF35CC036051B23 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE0C3511B18BB3E3DDB9498A68A793 /* Analytics.swift */; };
-		B6FA19C1D72D25D167198F5DB784E8B3 /* MQTTKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFE9D536A06EA075F2CD47E6B8EEBF2 /* MQTTKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B96892DFFEFC37D7524EDCA47FD149C4 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = A950BAA19F30BC36EB88B39C109D38AA /* thread_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BE2F7CCBBF95B55E11A55F331FC72820 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = E45A3888CC97DEA6955BA5586372085B /* read_handle_shared.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BE6115959444A8CA12CE2C63442BE4DA /* tls_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 59DE5808A1DB6224EA796D9C4FE6E758 /* tls_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C37C8F0D13DF146FDDEC0055C42D81A7 /* mosquitto_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 711B5A9CFD91102DBCEBA2FA5FF44BF5 /* mosquitto_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C72ACBBEBFD2F101560CC41D7AAD2E02 /* AuthorizationManagerPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A4F9BE5C7E7B3C02FF1C0BCFB4ABC9 /* AuthorizationManagerPreferences.swift */; };
-		CD051E4EB09DEDF7A13381F9B839B0AF /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 964BF3B5DD60AA661738832355B78E38 /* send_client_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CE2B4D11B0019F9F81EA311C7B40E490 /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A29699567CB48F1619BF32133C57971 /* memory_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CEA5200F88E7932201816AF4DED1A05F /* BMSAnalyticsAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 331D0A636C2F5B990AF88F7DD1408358 /* BMSAnalyticsAPI-dummy.m */; };
-		D62C8E3F6799031926AB082E34F2F7CA /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A5589DE20CE054DD1C7527707EA4E12 /* logging_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DD3D40AE611E334925F98419BD904EC8 /* memory_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 603C0295EE011346D2559DB32C1B3B28 /* memory_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DDC1318430C4C7178408E17B2128EC5E /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 89DF72B09D09685B1CF7CE2269B704A7 /* mqtt3_protocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DF2380B08C7BD5E927BAD41B958581CD /* dummypthread.h in Headers */ = {isa = PBXBuildFile; fileRef = 22517DEE8F420A752C9D920B8FF105FE /* dummypthread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9124220B9CD2297FDA5F4184F5E528FE /* mosquitto.h in Headers */ = {isa = PBXBuildFile; fileRef = B0B0F5825F2A66A69A1C32551787FB1A /* mosquitto.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9616C85E055CB2B23A7772DA73398964 /* logging_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = BB145EA1B2F4B1A69BFFC446A3E09CF0 /* logging_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		97D30342DFCF5C243543A62545A1FC6E /* net_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 205984E7B6F9F19F01C9003A0BBA2CB4 /* net_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		995BA3D7C35393F591B2456A03C904E3 /* MQTTSSLSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7673C1BF43B920AE82340CE18005EDA9 /* MQTTSSLSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99B5F9C4BD8F75AE13923EA44EF6AD03 /* MQTTCFSocketEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 939A31F0B6D04B03D9DB960CE53F28A1 /* MQTTCFSocketEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B68E6963B6A29C9819D486252DDDC30 /* AuthenticationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1A012BF12AE93A2F404F2AD0FA9F5F /* AuthenticationDelegate.swift */; };
+		9C6FAA6A23172AAF1E48399BC798B1DB /* MQTTLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6D3AD1BAE0F744ACAA71778844BB23 /* MQTTLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C81FF2F391F48FAA1FC06E1C0A77ABD /* MQTTTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = F28B7B9F2197C442035BBA6F8E20FB72 /* MQTTTransport.m */; };
+		A0465175B717622B14B43DE43976D909 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701EBFA5DBF0133CCEB2D307FBA5DE82 /* BaseRequest.swift */; };
+		A10341236337B4CEE1DA3D3DA6CA6E77 /* MQTTCFSocketTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 68254F2E7E4A6806A53E381E7BF9D0CD /* MQTTCFSocketTransport.m */; };
+		A5757BB44EF16DE950E72930732A3775 /* MCADeviceIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA69A2EB0E78A790D108B8FB3999A39 /* MCADeviceIdentity.swift */; };
+		A749A3085F37ED433C354E24D528F828 /* MQTTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE71F2E27AD97C71DD3FBF905CDC0235 /* MQTTKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8C6FD897ED2CF672BF35CC036051B23 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9DC7C2132C16A38953E613EA823D2D /* Analytics.swift */; };
+		AC44B7975CDC9BBCB2CE48A135496718 /* MQTTSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBAC2496419AF24FEF9F005FB24C39A /* MQTTSessionManager.m */; };
+		B0BF176D76925C2278B6FE83A249E9AF /* MQTTSSLSecurityPolicyEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E71DC5A9DA2CEAF0D8438A8F9B3FB080 /* MQTTSSLSecurityPolicyEncoder.m */; };
+		B2D94C9D6696DF559AB8DB71508C9E73 /* MQTTSSLSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B039529C752BB72A6DB6C36E39E45E1 /* MQTTSSLSecurityPolicy.m */; };
+		B6FA19C1D72D25D167198F5DB784E8B3 /* MQTTKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0FBCFB43DC5468496B8A697E89F2CF /* MQTTKit.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B96892DFFEFC37D7524EDCA47FD149C4 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = D6050A12EF80E28C6059EBC15C839D99 /* thread_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE2F7CCBBF95B55E11A55F331FC72820 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 681B19A9E84F761BF7909BD41DC5FBBF /* read_handle_shared.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE6115959444A8CA12CE2C63442BE4DA /* tls_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D19ADB6E431EAFEF627A55E12C2A996 /* tls_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1B649FC1F2BF8FAFBFCF0EC0BC2459C /* MQTTPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAAC0D1F3480566DEAD5636F34A7F71 /* MQTTPersistence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C22F9E10334ED5B41BFAFEA55F958A91 /* MQTTDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB1C45F3B18BEDFDB30A6796D1C8668 /* MQTTDecoder.m */; };
+		C37C8F0D13DF146FDDEC0055C42D81A7 /* mosquitto_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9496F8BA9EEE6A90B3CD6DE7213963DD /* mosquitto_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C72ACBBEBFD2F101560CC41D7AAD2E02 /* AuthorizationManagerPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DDAD62F33FDAE3187678B3A7A2501 /* AuthorizationManagerPreferences.swift */; };
+		C8C7B5552D18687796C62C17EF8649BE /* MQTTInMemoryPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9248479E0802D42B34DB8105BCCD57 /* MQTTInMemoryPersistence.m */; };
+		CD051E4EB09DEDF7A13381F9B839B0AF /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 4E806CC79F8DCCE63D4E77B6A2111963 /* send_client_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CE2B4D11B0019F9F81EA311C7B40E490 /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C4ECD0EE9D2B2B0BBCF9D4731A04565 /* memory_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CEA5200F88E7932201816AF4DED1A05F /* BMSAnalyticsAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DF06AACB1BA9ED14549408B4DBB1A3 /* BMSAnalyticsAPI-dummy.m */; };
+		CF7FA4F70A84F351DA78FCFD6CD28527 /* MQTTClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EC5A7E2FD432112924A8BE58073FCF /* MQTTClient-dummy.m */; };
+		D0EBD89CC5518FABF551410FB4BEBB90 /* MQTTSessionLegacy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D62D6CE62E6AA45337E28C85F82A80 /* MQTTSessionLegacy.m */; };
+		D244CAC608CD49FC3D829E7A4E7E1EDB /* MQTTSession.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6FEA872781CD3E4830F757DB1112AE /* MQTTSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D62C8E3F6799031926AB082E34F2F7CA /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFF7E2828FFFDCDFF6C5B25A9D1A48 /* logging_mosq.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D8787009C092CC7D3810617FFF188978 /* Pods-VehicleMonitoring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFBEAB3E631A51CD146B989C2E43AC72 /* Pods-VehicleMonitoring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD3D40AE611E334925F98419BD904EC8 /* memory_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 3001B89BAAA9156F98F8BA5409DE2612 /* memory_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DDC1318430C4C7178408E17B2128EC5E /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E1520564A7B5AFF39C85256715ABC8 /* mqtt3_protocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF2380B08C7BD5E927BAD41B958581CD /* dummypthread.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC9E9D7E5FC50E5618546C9F1B14CE7 /* dummypthread.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E3A0B17BC9A5764F7207869D58C5856D /* BMSAnalyticsAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BED12742B7FCB30E548F85FBF23D4F /* BMSAnalyticsAPI.framework */; };
-		E4A2390E59E6BD20B2047A80F1E2B3A4 /* SecurityUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B2576509DD0F591D9B17423EDE9B1A /* SecurityUtils.swift */; };
-		E4C253DD4CBDFB3EA90CB3FADD37F550 /* BMSCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B359D5467BEBDA4CB105913A849C6E7 /* BMSCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E529AD1EF2EDA74FC35F72F5B4853870 /* messages_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B67FC4BAE1B055CF1F6726DE850F535 /* messages_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E8ADC70E0C7849C0F43D63B560B972B7 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = A11C0604DD14357906598D2D7AF02A82 /* read_handle_client.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F44FB39DE55788ACE392C9242FD9BDE9 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = F0BBD5007AF0A21234D31C4428B3A5D7 /* module.modulemap */; };
-		F4D0694BC4C16B9687F46E7C8CAC3BCE /* BaseAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F94D3FB7A6EBC9196485CE1F32364EF /* BaseAuthorizationManager.swift */; };
-		F600E60A0D662EE8C2BE13789BAED339 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3F75B9D831EA5B1B60284C2E83CAA3 /* Logger.swift */; };
-		F7D02B9A9AB41C1D5B05A3D521D1BFA2 /* BaseUserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38DC84A7AF25451C6254B4A0D990E8D /* BaseUserIdentity.swift */; };
-		FFD7333F32343CFB540E3252449BB943 /* time_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF9AB5B84A607E0E5EBDC7C6DE5C2B3 /* time_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4A2390E59E6BD20B2047A80F1E2B3A4 /* SecurityUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF476374AB5C38FBA0DA1C5A9BDEB2 /* SecurityUtils.swift */; };
+		E4C253DD4CBDFB3EA90CB3FADD37F550 /* BMSCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B596AFD94FC0B61988CA71401E13F935 /* BMSCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E529AD1EF2EDA74FC35F72F5B4853870 /* messages_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 68FB23DD5302A9ADA48A18813F12162D /* messages_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E8ADC70E0C7849C0F43D63B560B972B7 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C222AC128482438471DD19EC807B116 /* read_handle_client.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E9F5B1DD21F6BFCCDCEF9249CF0EFB16 /* MQTTTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E79F2CDC2C47CF631D4600D863D0A44 /* MQTTTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1B7983C78F314F452283A05BC2175B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E362CF246DC424C52FCD4296E5EB075D /* Foundation.framework */; };
+		F44FB39DE55788ACE392C9242FD9BDE9 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 4573B8000A31A325759A15D0C174870A /* module.modulemap */; };
+		F4D0694BC4C16B9687F46E7C8CAC3BCE /* BaseAuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B728AAF775AF8BE7F8F0E93EE60286CA /* BaseAuthorizationManager.swift */; };
+		F600E60A0D662EE8C2BE13789BAED339 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFBAEAE527FF7F9AFF36B487805DFB6 /* Logger.swift */; };
+		F6ED5CDD00D3FF7231BD347A064D5DA5 /* MQTTSessionSynchron.h in Headers */ = {isa = PBXBuildFile; fileRef = F1BC4DB3A967DA2D0BBAF85A60079B8E /* MQTTSessionSynchron.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D02B9A9AB41C1D5B05A3D521D1BFA2 /* BaseUserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1350719C24F63C91A17971F782C2A0CC /* BaseUserIdentity.swift */; };
+		FB914C6645ACD66A92C0A6B1450BF4E8 /* MQTTCFSocketDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2135E05255AB996DD9CFC32A901B590C /* MQTTCFSocketDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF41C59D89CF2E451670300D7041EB81 /* MQTTSessionSynchron.m in Sources */ = {isa = PBXBuildFile; fileRef = 072604A16468253AAA8E25B29F61B150 /* MQTTSessionSynchron.m */; };
+		FFD7333F32343CFB540E3252449BB943 /* time_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BDAF022120E5B880BB26A1F2498FC6 /* time_mosq.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3709825A384A4C4356F40BF89544B496 /* PBXContainerItemProxy */ = {
+		181D001C44506AF8213072CFF548C32A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 060D779F4F0D4DD050D9E08865879D01;
+			remoteInfo = BMSCore;
+		};
+		503119357D69FA9468FDF9B6E9A40300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CE5ED24D6F62A1F103B9499F648E846;
+			remoteInfo = BMSSecurity;
+		};
+		75612B4E116E599F7E2A359E4E9F0AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609B4457212358FB9F737E2A6108427D;
+			remoteInfo = MQTTKit;
+		};
+		7BB9E928E10222F1CDA23BD57C5C0566 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -109,13 +168,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 99B55BA277E5A8747DC03A34ECFE62EE;
 			remoteInfo = BMSAnalyticsAPI;
-		};
-		932029CA1CA539F44D547E4166C407EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 609B4457212358FB9F737E2A6108427D;
-			remoteInfo = MQTTKit;
 		};
 		C5633572DFA812D70D3ED26223F2E28A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -131,137 +183,186 @@
 			remoteGlobalIDString = 060D779F4F0D4DD050D9E08865879D01;
 			remoteInfo = BMSCore;
 		};
-		DC11A92910A859CDC317CE85C6338BFD /* PBXContainerItemProxy */ = {
+		EBC7B2D6F44D78C8A908C2F6CBA355A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 060D779F4F0D4DD050D9E08865879D01;
-			remoteInfo = BMSCore;
-		};
-		FC22BC69C75A1D7326EABF962E699DA1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7CE5ED24D6F62A1F103B9499F648E846;
-			remoteInfo = BMSSecurity;
+			remoteGlobalIDString = D1B495DA5558BCC077E21573A719B685;
+			remoteInfo = MQTTClient;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A29699567CB48F1619BF32133C57971 /* memory_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = memory_mosq.c; path = libmosquitto/memory_mosq.c; sourceTree = "<group>"; };
-		0F45D321BE60FCFB4C6C80154EED822C /* MQTTKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTKit.h; path = MQTTKit/MQTTKit.h; sourceTree = "<group>"; };
-		1543758C293B143E79764EDE256B99D7 /* BMSURLSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSURLSessionDelegate.swift; path = "Source/Network Requests/BMSURLSessionDelegate.swift"; sourceTree = "<group>"; };
-		1B5E488E35736F451A20F4C8959D0996 /* BMSCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSCore-prefix.pch"; sourceTree = "<group>"; };
-		1BA712BE48B8836DF4688BB64DD9DEDE /* AuthorizationProcessManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationProcessManager.swift; path = Source/mca/internal/AuthorizationProcessManager.swift; sourceTree = "<group>"; };
-		1CEC6F34A825E144BD729F9E6623DBD8 /* BMSCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BMSCore.modulemap; sourceTree = "<group>"; };
-		1F17ABBC2F577AA8DBF23255DA08F7EF /* BaseDeviceIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDeviceIdentity.swift; path = Source/Security/Identity/BaseDeviceIdentity.swift; sourceTree = "<group>"; };
+		001A9455F3EA33DA829DE465CF0051C5 /* DeviceIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceIdentity.swift; path = Source/Security/Identity/DeviceIdentity.swift; sourceTree = "<group>"; };
+		002DDAD62F33FDAE3187678B3A7A2501 /* AuthorizationManagerPreferences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationManagerPreferences.swift; path = Source/mca/internal/AuthorizationManagerPreferences.swift; sourceTree = "<group>"; };
+		02419D3B9F9B6E86A25873F24D465674 /* BMSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02695D1F9EDB8316519CA3875CF49394 /* MQTTClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MQTTClient.modulemap; sourceTree = "<group>"; };
+		03D62D6CE62E6AA45337E28C85F82A80 /* MQTTSessionLegacy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTSessionLegacy.m; path = MQTTClient/MQTTClient/MQTTSessionLegacy.m; sourceTree = "<group>"; };
+		04980EA544D18CF447589196F6ADA87D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A7ECFD2A3229DFE47C94C1DB81EF7D /* ChallengeHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeHandler.swift; path = Source/mca/internal/challengehandlers/ChallengeHandler.swift; sourceTree = "<group>"; };
+		072604A16468253AAA8E25B29F61B150 /* MQTTSessionSynchron.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTSessionSynchron.m; path = MQTTClient/MQTTClient/MQTTSessionSynchron.m; sourceTree = "<group>"; };
+		09AB3DD153D299CFBD33CAFFEB72E803 /* send_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = send_mosq.c; path = libmosquitto/send_mosq.c; sourceTree = "<group>"; };
+		0AC9E9D7E5FC50E5618546C9F1B14CE7 /* dummypthread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dummypthread.h; path = libmosquitto/dummypthread.h; sourceTree = "<group>"; };
+		0B039529C752BB72A6DB6C36E39E45E1 /* MQTTSSLSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTSSLSecurityPolicy.m; path = MQTTClient/MQTTClient/MQTTSSLSecurityPolicy.m; sourceTree = "<group>"; };
+		0B2DAF61443D2035D7B6BD1EF8701D7A /* BMSAnalyticsAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BMSAnalyticsAPI.modulemap; sourceTree = "<group>"; };
+		0CE77F97E617654800479187F1759CC4 /* Pods_VehicleMonitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VehicleMonitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EEE144A6948FBB53C5470DAB0006D6D /* MQTTSSLSecurityPolicyTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTSSLSecurityPolicyTransport.m; path = MQTTClient/MQTTClient/MQTTSSLSecurityPolicyTransport.m; sourceTree = "<group>"; };
+		107976F15C6727DD3434C1A431D7EE2E /* MQTTCoreDataPersistence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTCoreDataPersistence.h; path = MQTTClient/MQTTClient/MQTTCoreDataPersistence.h; sourceTree = "<group>"; };
+		1350719C24F63C91A17971F782C2A0CC /* BaseUserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseUserIdentity.swift; path = Source/Security/Identity/BaseUserIdentity.swift; sourceTree = "<group>"; };
+		18529BCECF349E37A7EF7043EBE50542 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAE1E184E7F12BA55C17478EB447024 /* will_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = will_mosq.c; path = libmosquitto/will_mosq.c; sourceTree = "<group>"; };
+		1D19ADB6E431EAFEF627A55E12C2A996 /* tls_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls_mosq.h; path = libmosquitto/tls_mosq.h; sourceTree = "<group>"; };
+		1EDFF7E2828FFFDCDFF6C5B25A9D1A48 /* logging_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = logging_mosq.c; path = libmosquitto/logging_mosq.c; sourceTree = "<group>"; };
 		1F8AA5E6D4AFCD02B48E85E276FE62A1 /* Pods-VehicleMonitoring-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VehicleMonitoring-acknowledgements.plist"; sourceTree = "<group>"; };
-		2037560ACE96713DCDE1608BDBC7C9B4 /* BMSAnalyticsAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSAnalyticsAPI-umbrella.h"; sourceTree = "<group>"; };
-		204BC88FC1344B9C2540D41F74716560 /* DeviceIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceIdentity.swift; path = Source/Security/Identity/DeviceIdentity.swift; sourceTree = "<group>"; };
-		21DC8D3D6ABB3B638C2CCA662141AAED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22517DEE8F420A752C9D920B8FF105FE /* dummypthread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dummypthread.h; path = libmosquitto/dummypthread.h; sourceTree = "<group>"; };
-		22BE0C3511B18BB3E3DDB9498A68A793 /* Analytics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Analytics.swift; path = Source/Analytics.swift; sourceTree = "<group>"; };
-		24A4F9BE5C7E7B3C02FF1C0BCFB4ABC9 /* AuthorizationManagerPreferences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationManagerPreferences.swift; path = Source/mca/internal/AuthorizationManagerPreferences.swift; sourceTree = "<group>"; };
-		27358856F778C9EC301D7F33949795D0 /* MQTTKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MQTTKit-umbrella.h"; sourceTree = "<group>"; };
-		331D0A636C2F5B990AF88F7DD1408358 /* BMSAnalyticsAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMSAnalyticsAPI-dummy.m"; sourceTree = "<group>"; };
-		336AE515862403E292D0D008D804B8B7 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = "Source/Network Requests/Response.swift"; sourceTree = "<group>"; };
-		34013CE238EC82A5322BF067AF0F1812 /* tls_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tls_mosq.c; path = libmosquitto/tls_mosq.c; sourceTree = "<group>"; };
-		3789DA492B7B9113F8831CA7EC7A4968 /* BMSSecurityError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSSecurityError.swift; path = Source/mca/internal/Encryption/BMSSecurityError.swift; sourceTree = "<group>"; };
-		379AB07A7EDFEA3DC74EDFC4C2096DF1 /* RequestOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestOptions.swift; path = Source/mca/internal/RequestOptions.swift; sourceTree = "<group>"; };
-		3924EF23C666CCADC2FD6C98ACC5E0CD /* BMSSecurity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSSecurity-prefix.pch"; sourceTree = "<group>"; };
-		3AA9730C5FA40F63C01ED2454CC65821 /* BMSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B359D5467BEBDA4CB105913A849C6E7 /* BMSCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMSCore.h; path = Source/Resources/BMSCore.h; sourceTree = "<group>"; };
-		3C0C325E3232CC2CBEBD29933A9E135B /* util_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = util_mosq.c; path = libmosquitto/util_mosq.c; sourceTree = "<group>"; };
-		3CE9B9383ED6972EE5664D7A2246CE92 /* BMSAnalyticsAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSAnalyticsAPI-prefix.pch"; sourceTree = "<group>"; };
-		413A2F15FC146309381941C6C5518842 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Source/mca/internal/Utils.swift; sourceTree = "<group>"; };
-		4396A22E3CE7449784F9AD18BE1E24A6 /* util_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util_mosq.h; path = libmosquitto/util_mosq.h; sourceTree = "<group>"; };
+		205984E7B6F9F19F01C9003A0BBA2CB4 /* net_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = net_mosq.h; path = libmosquitto/net_mosq.h; sourceTree = "<group>"; };
+		2135E05255AB996DD9CFC32A901B590C /* MQTTCFSocketDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTCFSocketDecoder.h; path = MQTTClient/MQTTClient/MQTTCFSocketDecoder.h; sourceTree = "<group>"; };
+		2245F6C5013E18F846613A95B53A37E7 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		240C3195FE3EC56D21A7E513A7F25D4F /* MQTTClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MQTTClient-umbrella.h"; sourceTree = "<group>"; };
+		274BC978F2E436EF8E2A8CACB3E62869 /* BaseDeviceIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDeviceIdentity.swift; path = Source/Security/Identity/BaseDeviceIdentity.swift; sourceTree = "<group>"; };
+		27889ED869057DCE3BBE9C98EDCB4705 /* send_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = send_mosq.h; path = libmosquitto/send_mosq.h; sourceTree = "<group>"; };
+		29795BA9D1CA3AF0629BC64AD3B2F32F /* BMSAnalyticsAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSAnalyticsAPI-prefix.pch"; sourceTree = "<group>"; };
+		2B68D4C72AF84E29ABE9C369F411A4CD /* MQTTClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MQTTClient-prefix.pch"; sourceTree = "<group>"; };
+		2B722117058D9C67FED9B78A81282197 /* read_handle.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle.c; path = libmosquitto/read_handle.c; sourceTree = "<group>"; };
+		2C222AC128482438471DD19EC807B116 /* read_handle_client.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle_client.c; path = libmosquitto/read_handle_client.c; sourceTree = "<group>"; };
+		2D2E7D86928FF35DC62E483B099D2739 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Source/mca/internal/Utils.swift; sourceTree = "<group>"; };
+		2E2053477A9876991F17CD5CC1A20CC2 /* BMSSecurity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMSSecurity.h; path = Source/Resources/BMSSecurity.h; sourceTree = "<group>"; };
+		2EDDF1BA53DCA3A2EFDD8194D93EADA9 /* AuthorizationRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationRequestManager.swift; path = Source/mca/internal/AuthorizationRequestManager.swift; sourceTree = "<group>"; };
+		3001B89BAAA9156F98F8BA5409DE2612 /* memory_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memory_mosq.h; path = libmosquitto/memory_mosq.h; sourceTree = "<group>"; };
+		305ADD6D44985F188FC5093925A5C9C9 /* AuthorizationProcessManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationProcessManager.swift; path = Source/mca/internal/AuthorizationProcessManager.swift; sourceTree = "<group>"; };
+		31C8FE2924411CA3167804C31FD6A9AE /* will_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = will_mosq.h; path = libmosquitto/will_mosq.h; sourceTree = "<group>"; };
+		324A21E89914BFCB17D4E3343D4AFDAD /* BMSAnalyticsAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMSAnalyticsAPI.xcconfig; sourceTree = "<group>"; };
+		35BDAF022120E5B880BB26A1F2498FC6 /* time_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = time_mosq.h; path = libmosquitto/time_mosq.h; sourceTree = "<group>"; };
+		39F58F459A2310255BCD623DF8A12CC2 /* util_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util_mosq.h; path = libmosquitto/util_mosq.h; sourceTree = "<group>"; };
+		3ACF476374AB5C38FBA0DA1C5A9BDEB2 /* SecurityUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecurityUtils.swift; path = Source/mca/internal/certificate/SecurityUtils.swift; sourceTree = "<group>"; };
+		3BA7B74843C8EEFC2923D5AA74199AA3 /* BMSCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMSCore.xcconfig; sourceTree = "<group>"; };
+		3D6118F5E5F3470E8C429526EF3CDD06 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		402E013C8E35FF5FB5C5BA4B1DA6B97D /* read_handle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = read_handle.h; path = libmosquitto/read_handle.h; sourceTree = "<group>"; };
+		4038D2F6A4F151FCDCD49077300FBC33 /* MQTTSSLSecurityPolicyDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTSSLSecurityPolicyDecoder.m; path = MQTTClient/MQTTClient/MQTTSSLSecurityPolicyDecoder.m; sourceTree = "<group>"; };
+		41AF0EF3FF8605BC1F2E181F57CC50FF /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		4573B8000A31A325759A15D0C174870A /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = Source/Resources/module.modulemap; sourceTree = "<group>"; };
+		48EFD10F0CD632CF2C79E73448DD44DF /* MQTTClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MQTTClient.xcconfig; sourceTree = "<group>"; };
+		495FD7913A83959B78A3875C9797BB93 /* BMSSecurity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BMSSecurity.modulemap; sourceTree = "<group>"; };
+		4C4ECD0EE9D2B2B0BBCF9D4731A04565 /* memory_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = memory_mosq.c; path = libmosquitto/memory_mosq.c; sourceTree = "<group>"; };
 		4CABAF0CEF19C894F3A4ACEDD0678D74 /* Pods-VehicleMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VehicleMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
-		4CB7B20A4786E9AB0BBE72BFABED920A /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		4DDEBA2B2C10E00DD6493CAE9E8886FD /* BMSSecurity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMSSecurity.xcconfig; sourceTree = "<group>"; };
+		4E1A012BF12AE93A2F404F2AD0FA9F5F /* AuthenticationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationDelegate.swift; path = Source/mca/api/AuthenticationDelegate.swift; sourceTree = "<group>"; };
+		4E563C59176B3B9F3BE25E882C8960FF /* BMSSecurity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSSecurity-prefix.pch"; sourceTree = "<group>"; };
+		4E806CC79F8DCCE63D4E77B6A2111963 /* send_client_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = send_client_mosq.c; path = libmosquitto/send_client_mosq.c; sourceTree = "<group>"; };
 		512C9E8B29979A4B2DCD43C45621F697 /* Pods-VehicleMonitoring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VehicleMonitoring.modulemap"; sourceTree = "<group>"; };
-		533ED475AE20ADBB72FE1F509D6A3CCF /* BMSAnalyticsAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMSAnalyticsAPI.xcconfig; sourceTree = "<group>"; };
-		59DE5808A1DB6224EA796D9C4FE6E758 /* tls_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls_mosq.h; path = libmosquitto/tls_mosq.h; sourceTree = "<group>"; };
-		5ACA9AA4DEF08680309220EAA0E84039 /* mosquitto.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mosquitto.c; path = libmosquitto/mosquitto.c; sourceTree = "<group>"; };
-		5B67FC4BAE1B055CF1F6726DE850F535 /* messages_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = messages_mosq.h; path = libmosquitto/messages_mosq.h; sourceTree = "<group>"; };
-		5DAAF638D10F7218A0D74B6A594B5C9F /* read_handle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = read_handle.h; path = libmosquitto/read_handle.h; sourceTree = "<group>"; };
-		5FF9AB5B84A607E0E5EBDC7C6DE5C2B3 /* time_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = time_mosq.h; path = libmosquitto/time_mosq.h; sourceTree = "<group>"; };
-		603C0295EE011346D2559DB32C1B3B28 /* memory_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memory_mosq.h; path = libmosquitto/memory_mosq.h; sourceTree = "<group>"; };
-		616DE1101B6EDFB59F51DC1C96FBCDA9 /* BMSSecurityConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSSecurityConstants.swift; path = Source/mca/internal/BMSSecurityConstants.swift; sourceTree = "<group>"; };
-		6EFE9D536A06EA075F2CD47E6B8EEBF2 /* MQTTKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTKit.m; path = MQTTKit/MQTTKit.m; sourceTree = "<group>"; };
-		7045C3D5A07FCD26FB57FACCBF8270C1 /* BaseRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRequest.swift; path = "Source/Network Requests/BaseRequest.swift"; sourceTree = "<group>"; };
-		711B5A9CFD91102DBCEBA2FA5FF44BF5 /* mosquitto_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = libmosquitto/mosquitto_internal.h; sourceTree = "<group>"; };
-		732D5368DA140AAD523AA9420061F3EA /* AuthorizationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationManager.swift; path = Source/Security/AuthorizationManager.swift; sourceTree = "<group>"; };
-		74B2576509DD0F591D9B17423EDE9B1A /* SecurityUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecurityUtils.swift; path = Source/mca/internal/certificate/SecurityUtils.swift; sourceTree = "<group>"; };
-		750791AA3ABA6628D03FD059ACDBB874 /* MQTTKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MQTTKit.xcconfig; sourceTree = "<group>"; };
-		7A5589DE20CE054DD1C7527707EA4E12 /* logging_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = logging_mosq.c; path = libmosquitto/logging_mosq.c; sourceTree = "<group>"; };
-		7A9E8631BDC9F399A3FC27ABD496FFC7 /* AuthenticationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationDelegate.swift; path = Source/mca/api/AuthenticationDelegate.swift; sourceTree = "<group>"; };
+		56848066D32B5B665EBE4FC74529470C /* MQTTKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MQTTKit-umbrella.h"; sourceTree = "<group>"; };
+		56EC5A7E2FD432112924A8BE58073FCF /* MQTTClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MQTTClient-dummy.m"; sourceTree = "<group>"; };
+		585EED31094D4FFAD3E55E999A9FF99E /* MQTTClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3CD9ED1296FDD322CAD59DAB9F48F4 /* MQTTSSLSecurityPolicyTransport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTSSLSecurityPolicyTransport.h; path = MQTTClient/MQTTClient/MQTTSSLSecurityPolicyTransport.h; sourceTree = "<group>"; };
+		5CA4CA9699DC9134FE6DCF30E6235A31 /* MQTTKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MQTTKit-prefix.pch"; sourceTree = "<group>"; };
+		5E9CCA99F488253958B2DA9DE6431A83 /* MQTTSessionLegacy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTSessionLegacy.h; path = MQTTClient/MQTTClient/MQTTSessionLegacy.h; sourceTree = "<group>"; };
+		5FCC895CB452E77B02B598F85D0D6411 /* MQTTMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTMessage.m; path = MQTTClient/MQTTClient/MQTTMessage.m; sourceTree = "<group>"; };
+		61CB4FF43985BD687868CB6EBFC5FD91 /* MQTTSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTSession.m; path = MQTTClient/MQTTClient/MQTTSession.m; sourceTree = "<group>"; };
+		61F1C779DE606C810E0AD24F19E0B06E /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Source/mca/internal/Queue.swift; sourceTree = "<group>"; };
+		63DD2BB17560D1F4528BB54AB459B2EC /* MQTTCoreDataPersistence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTCoreDataPersistence.m; path = MQTTClient/MQTTClient/MQTTCoreDataPersistence.m; sourceTree = "<group>"; };
+		64034082F05C02EFF23BF3B9C053A17A /* BaseAppIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAppIdentity.swift; path = Source/Security/Identity/BaseAppIdentity.swift; sourceTree = "<group>"; };
+		681B19A9E84F761BF7909BD41DC5FBBF /* read_handle_shared.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle_shared.c; path = libmosquitto/read_handle_shared.c; sourceTree = "<group>"; };
+		68254F2E7E4A6806A53E381E7BF9D0CD /* MQTTCFSocketTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTCFSocketTransport.m; path = MQTTClient/MQTTClient/MQTTCFSocketTransport.m; sourceTree = "<group>"; };
+		68BDD1044548F03F98544A0BCF18F77A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68FB23DD5302A9ADA48A18813F12162D /* messages_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = messages_mosq.h; path = libmosquitto/messages_mosq.h; sourceTree = "<group>"; };
+		697B80EBE30C7247C4F9FD3A77683035 /* BMSSecurity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSSecurity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C9DC7C2132C16A38953E613EA823D2D /* Analytics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Analytics.swift; path = Source/Analytics.swift; sourceTree = "<group>"; };
+		6CA5B7D3CC65143E62BCA0D8309F4009 /* net_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = net_mosq.c; path = libmosquitto/net_mosq.c; sourceTree = "<group>"; };
+		6F9EAB2A5902297111CF67F3FF6E494F /* BMSClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSClient.swift; path = "Source/Network Requests/BMSClient.swift"; sourceTree = "<group>"; };
+		701B6A3CABB0E06EC80511963096BD88 /* BMSSecurityError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSSecurityError.swift; path = Source/mca/internal/Encryption/BMSSecurityError.swift; sourceTree = "<group>"; };
+		701EBFA5DBF0133CCEB2D307FBA5DE82 /* BaseRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRequest.swift; path = "Source/Network Requests/BaseRequest.swift"; sourceTree = "<group>"; };
+		70C1C5F92D7D2FF339FBFBA43CFF5599 /* MQTTCFSocketEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTCFSocketEncoder.m; path = MQTTClient/MQTTClient/MQTTCFSocketEncoder.m; sourceTree = "<group>"; };
+		7456CEF75DF71161A9AF6A025CB3612C /* BMSSecurity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSSecurity-umbrella.h"; sourceTree = "<group>"; };
+		7673C1BF43B920AE82340CE18005EDA9 /* MQTTSSLSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTSSLSecurityPolicy.h; path = MQTTClient/MQTTClient/MQTTSSLSecurityPolicy.h; sourceTree = "<group>"; };
 		7B046E83A582B708E5F6C20F083FA5B6 /* Pods-VehicleMonitoring-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VehicleMonitoring-frameworks.sh"; sourceTree = "<group>"; };
-		7EBF9AEBD578E7159A09124271E990D1 /* MCAAuthorizationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAAuthorizationManager.swift; path = Source/mca/api/MCAAuthorizationManager.swift; sourceTree = "<group>"; };
-		7F9B98CEC7B2000A914DC1AA01AC82EA /* BMSCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMSCore.xcconfig; sourceTree = "<group>"; };
-		84789F3CFADB7DC63D84D92671C030E8 /* send_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = send_mosq.c; path = libmosquitto/send_mosq.c; sourceTree = "<group>"; };
-		89DF72B09D09685B1CF7CE2269B704A7 /* mqtt3_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = libmosquitto/mqtt3_protocol.h; sourceTree = "<group>"; };
-		8D3F75B9D831EA5B1B60284C2E83CAA3 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Logger.swift; sourceTree = "<group>"; };
-		8E593C243300B05CE2BDCD3DA30D3842 /* net_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = net_mosq.h; path = libmosquitto/net_mosq.h; sourceTree = "<group>"; };
-		8F94D3FB7A6EBC9196485CE1F32364EF /* BaseAuthorizationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAuthorizationManager.swift; path = Source/Security/BaseAuthorizationManager.swift; sourceTree = "<group>"; };
-		91132B078BDF5F2FFB67795B700295D5 /* BaseAppIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAppIdentity.swift; path = Source/Security/Identity/BaseAppIdentity.swift; sourceTree = "<group>"; };
+		7DD73F8DBD5AACE3EC660CF16D0CA150 /* MQTTCFSocketTransport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTCFSocketTransport.h; path = MQTTClient/MQTTClient/MQTTCFSocketTransport.h; sourceTree = "<group>"; };
+		7FFBAEAE527FF7F9AFF36B487805DFB6 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Source/Logger.swift; sourceTree = "<group>"; };
+		804294C9B99083B01F00D90645735DBD /* MCAUserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAUserIdentity.swift; path = Source/mca/api/identity/MCAUserIdentity.swift; sourceTree = "<group>"; };
+		8394F4C54DFE086CE0F3DB07DF91B1C3 /* UserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserIdentity.swift; path = Source/Security/Identity/UserIdentity.swift; sourceTree = "<group>"; };
+		868F65DBA100F780135C7C81D7FC1FB4 /* messages_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = messages_mosq.c; path = libmosquitto/messages_mosq.c; sourceTree = "<group>"; };
+		86DB8A68BC32E8D9502F3593907DD78E /* BMSCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMSCore-dummy.m"; sourceTree = "<group>"; };
+		8D31192D5FEDB1E6611C9F0A93F4B212 /* util_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = util_mosq.c; path = libmosquitto/util_mosq.c; sourceTree = "<group>"; };
+		8DAE118AFF2A2693D14A83E7EABF5F47 /* MQTTKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MQTTKit.modulemap; sourceTree = "<group>"; };
+		8E79F2CDC2C47CF631D4600D863D0A44 /* MQTTTransport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTTransport.h; path = MQTTClient/MQTTClient/MQTTTransport.h; sourceTree = "<group>"; };
+		913EB4EA3B5A606603575B44AC85D60C /* BMSSecurity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMSSecurity-dummy.m"; sourceTree = "<group>"; };
+		91B9BAC9486BC6F5871F340394A1894A /* BMSURLSessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSURLSessionDelegate.swift; path = "Source/Network Requests/BMSURLSessionDelegate.swift"; sourceTree = "<group>"; };
+		92EFDBBF72BEC0174BC09199A071EAF8 /* MQTTKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MQTTKit.xcconfig; sourceTree = "<group>"; };
+		939A31F0B6D04B03D9DB960CE53F28A1 /* MQTTCFSocketEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTCFSocketEncoder.h; path = MQTTClient/MQTTClient/MQTTCFSocketEncoder.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		959252FAA78105AA9127D8EE5B65FA6D /* MQTTKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MQTTKit.modulemap; sourceTree = "<group>"; };
-		964BF3B5DD60AA661738832355B78E38 /* send_client_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = send_client_mosq.c; path = libmosquitto/send_client_mosq.c; sourceTree = "<group>"; };
-		9803807142255889D23CE8EA58BC0F11 /* will_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = will_mosq.c; path = libmosquitto/will_mosq.c; sourceTree = "<group>"; };
+		9496F8BA9EEE6A90B3CD6DE7213963DD /* mosquitto_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = libmosquitto/mosquitto_internal.h; sourceTree = "<group>"; };
+		98A5FFA2A8BFA91DA0306C244EF8FEE7 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationRequest.swift; path = Source/mca/internal/AuthorizationRequest.swift; sourceTree = "<group>"; };
 		98CB55F18A67CBFAE7DC6A1C87755273 /* BMSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		996A4E03E5A7CFAFE72DDAC8CE68869A /* time_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = time_mosq.c; path = libmosquitto/time_mosq.c; sourceTree = "<group>"; };
-		9B2A2352ADE3F4C5372B28D4E0CBB3EB /* BMSURLSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSURLSession.swift; path = "Source/Network Requests/BMSURLSession.swift"; sourceTree = "<group>"; };
-		9DB06DFDE3A584016CE4D2D605642468 /* UserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserIdentity.swift; path = Source/Security/Identity/UserIdentity.swift; sourceTree = "<group>"; };
-		A11C0604DD14357906598D2D7AF02A82 /* read_handle_client.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle_client.c; path = libmosquitto/read_handle_client.c; sourceTree = "<group>"; };
-		A1967F6B7A17247426013A8B0F42FA2D /* BMSSecurity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BMSSecurity.modulemap; sourceTree = "<group>"; };
-		A950BAA19F30BC36EB88B39C109D38AA /* thread_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = thread_mosq.c; path = libmosquitto/thread_mosq.c; sourceTree = "<group>"; };
-		AABE203B155FBFB59AA7BFCA9B4B791E /* net_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = net_mosq.c; path = libmosquitto/net_mosq.c; sourceTree = "<group>"; };
-		AB52BFF18BB89B16641C75FA1B6CE1DD /* BMSClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSClient.swift; path = "Source/Network Requests/BMSClient.swift"; sourceTree = "<group>"; };
-		AB8044A8F39AF12CAF3155CE7DB3E5E3 /* messages_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = messages_mosq.c; path = libmosquitto/messages_mosq.c; sourceTree = "<group>"; };
-		ACB95723EA5542C1BBF8DCAE19C58BEA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD6A81BA453C908ED1BD13C3B1CACBDB /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = libmosquitto/config.h; sourceTree = "<group>"; };
-		ADD28407CE993C7950705F7C46DE4C71 /* mosquitto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto.h; path = libmosquitto/mosquitto.h; sourceTree = "<group>"; };
+		9A0FBCFB43DC5468496B8A697E89F2CF /* MQTTKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTKit.m; path = MQTTKit/MQTTKit.m; sourceTree = "<group>"; };
+		9C6D3AD1BAE0F744ACAA71778844BB23 /* MQTTLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTLog.h; path = MQTTClient/MQTTClient/MQTTLog.h; sourceTree = "<group>"; };
+		9DBAC2496419AF24FEF9F005FB24C39A /* MQTTSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTSessionManager.m; path = MQTTClient/MQTTClient/MQTTSessionManager.m; sourceTree = "<group>"; };
+		A312CB1A79282D496AE60003D7566315 /* AuthorizationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationManager.swift; path = Source/Security/AuthorizationManager.swift; sourceTree = "<group>"; };
+		A57C30EC82812EC619CD20CFDCD54E8E /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = "Source/Network Requests/Request.swift"; sourceTree = "<group>"; };
+		A5C08B3BE187C0B1D363974524B92C8F /* MQTTKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70995856720F3330F91EBE08F8A8724 /* BMSAnalyticsAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSAnalyticsAPI-umbrella.h"; sourceTree = "<group>"; };
+		A75841789FDA73C9230D3DD9DC7916DF /* MQTTClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTClient.h; path = MQTTClient/MQTTClient/MQTTClient.h; sourceTree = "<group>"; };
+		A81ECA99C8BCB74B0A38E8E398BCA48B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA79548CD2362FBD4EA371C4CFA16E4A /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		ABAAC0D1F3480566DEAD5636F34A7F71 /* MQTTPersistence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTPersistence.h; path = MQTTClient/MQTTClient/MQTTPersistence.h; sourceTree = "<group>"; };
+		B0B0F5825F2A66A69A1C32551787FB1A /* mosquitto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto.h; path = libmosquitto/mosquitto.h; sourceTree = "<group>"; };
 		B0B24DCCD5A0C8FBDE10C80CC14D9C6B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B38DC84A7AF25451C6254B4A0D990E8D /* BaseUserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseUserIdentity.swift; path = Source/Security/Identity/BaseUserIdentity.swift; sourceTree = "<group>"; };
-		B8148BD4F17D10C7799F4A79B4BA3B14 /* BMSSecurity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMSSecurity.h; path = Source/Resources/BMSSecurity.h; sourceTree = "<group>"; };
-		B8CF774232B0D4A86F6799382FC67A00 /* MQTTKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MQTTKit-dummy.m"; sourceTree = "<group>"; };
-		B96546A97D2F8274D9B8669B725FD95B /* BMSSecurity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BMSSecurity.xcconfig; sourceTree = "<group>"; };
-		B9E76ECEAA8BEAD15563679E67C71517 /* AuthenticationContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationContext.swift; path = Source/mca/api/AuthenticationContext.swift; sourceTree = "<group>"; };
-		BBE68A7B8A64BC4F6E391E7CE4D9EB2B /* MQTTKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC5C920FF425FAE28014104E67354435 /* send_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = send_mosq.h; path = libmosquitto/send_mosq.h; sourceTree = "<group>"; };
+		B1BBDAEB575BE140661E221E5089A545 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		B596AFD94FC0B61988CA71401E13F935 /* BMSCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMSCore.h; path = Source/Resources/BMSCore.h; sourceTree = "<group>"; };
+		B728AAF775AF8BE7F8F0E93EE60286CA /* BaseAuthorizationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAuthorizationManager.swift; path = Source/Security/BaseAuthorizationManager.swift; sourceTree = "<group>"; };
+		B75AA8F9A3E8BF7D3B8A8144721B2FFF /* AppIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppIdentity.swift; path = Source/Security/Identity/AppIdentity.swift; sourceTree = "<group>"; };
+		BA39B90D2B744B73892611AA829897A9 /* mosquitto.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mosquitto.c; path = libmosquitto/mosquitto.c; sourceTree = "<group>"; };
+		BB145EA1B2F4B1A69BFFC446A3E09CF0 /* logging_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging_mosq.h; path = libmosquitto/logging_mosq.h; sourceTree = "<group>"; };
+		BBF503C38FAB57E3898161A48087D906 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = "Source/Network Requests/Response.swift"; sourceTree = "<group>"; };
 		BC7D484B82E8CDE967D6C8C62E8C68D7 /* Pods-VehicleMonitoring-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VehicleMonitoring-resources.sh"; sourceTree = "<group>"; };
-		BF2BF9C0CCE6A400BE7926527F4F2ACC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFF9A9A20EA96D47FB7C15EDD64C1A48 /* BMSAnalyticsAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BMSAnalyticsAPI.modulemap; sourceTree = "<group>"; };
-		C2D0E6145CE292D233F06047A554725C /* AuthorizationRequestManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationRequestManager.swift; path = Source/mca/internal/AuthorizationRequestManager.swift; sourceTree = "<group>"; };
-		C3A565AB5EE5B0C2FCE1A1AB35CA0ED5 /* Pods_VehicleMonitoring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VehicleMonitoring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB21C5CFDA2EECA1B41C0ECE9DDC6C1C /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Source/mca/internal/Queue.swift; sourceTree = "<group>"; };
-		CB67EA81193F68CCF7F7C18E477D4735 /* MCAAppIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAAppIdentity.swift; path = Source/mca/api/identity/MCAAppIdentity.swift; sourceTree = "<group>"; };
-		CC2559C46BB3795C2C8F4E2C262251B3 /* AuthorizationRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationRequest.swift; path = Source/mca/internal/AuthorizationRequest.swift; sourceTree = "<group>"; };
-		CD7C12D8EF8A6F936FC4B45BB9EED6F7 /* AppIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppIdentity.swift; path = Source/Security/Identity/AppIdentity.swift; sourceTree = "<group>"; };
-		D2117BB04D32F5D001AAA05B1B305FC4 /* MQTTKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MQTTKit-prefix.pch"; sourceTree = "<group>"; };
+		BD508B2A4D14C29D224450B58BF5CE8C /* MQTTSSLSecurityPolicyDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTSSLSecurityPolicyDecoder.h; path = MQTTClient/MQTTClient/MQTTSSLSecurityPolicyDecoder.h; sourceTree = "<group>"; };
+		BE71F2E27AD97C71DD3FBF905CDC0235 /* MQTTKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTKit.h; path = MQTTKit/MQTTKit.h; sourceTree = "<group>"; };
+		C023C4C4AB337375C33FFA166425A54F /* BMSSecurityConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSSecurityConstants.swift; path = Source/mca/internal/BMSSecurityConstants.swift; sourceTree = "<group>"; };
+		C1AF7654D6148D38E88CE8D3F7380D97 /* MQTTMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTMessage.h; path = MQTTClient/MQTTClient/MQTTMessage.h; sourceTree = "<group>"; };
+		C432AA915CEE0D046FBBC25675421F82 /* time_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = time_mosq.c; path = libmosquitto/time_mosq.c; sourceTree = "<group>"; };
+		CCCE8CBC90576F2ED5B2CBAE566857B9 /* BMSURLSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BMSURLSession.swift; path = "Source/Network Requests/BMSURLSession.swift"; sourceTree = "<group>"; };
+		CDC3C048D2652B4C0B7FC155AA3A302E /* RequestOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestOptions.swift; path = Source/mca/internal/RequestOptions.swift; sourceTree = "<group>"; };
+		CE6C40BFF43F5280287C6256BE65A325 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		D4E4BDFA86DD593FBB610C94DEE4A0F4 /* Pods-VehicleMonitoring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VehicleMonitoring-dummy.m"; sourceTree = "<group>"; };
-		D5BDF9F7012E3CB3C50EE08665CB80AC /* ChallengeHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChallengeHandler.swift; path = Source/mca/internal/challengehandlers/ChallengeHandler.swift; sourceTree = "<group>"; };
-		D8EDB19BC2D63471316749C9785D72C2 /* BMSAnalyticsAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSAnalyticsAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DED390206CC36AEB64D39A028BBA5B91 /* will_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = will_mosq.h; path = libmosquitto/will_mosq.h; sourceTree = "<group>"; };
-		DFAF91910BFE01FEC0A38DAED355834C /* BMSSecurity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSSecurity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFBE2CA4221053E77FE84F7CDC64EEB3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6050A12EF80E28C6059EBC15C839D99 /* thread_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = thread_mosq.c; path = libmosquitto/thread_mosq.c; sourceTree = "<group>"; };
+		D7ADB9C4DD3E53C3BA5B79097583BA45 /* MQTTSSLSecurityPolicyEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTSSLSecurityPolicyEncoder.h; path = MQTTClient/MQTTClient/MQTTSSLSecurityPolicyEncoder.h; sourceTree = "<group>"; };
+		D92EFEE82127FEC6C692989B155C7EE1 /* tls_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tls_mosq.c; path = libmosquitto/tls_mosq.c; sourceTree = "<group>"; };
+		D956CBAB31D21C20538A0D7E7835F8DF /* BMSAnalyticsAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSAnalyticsAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F23B1FBDA792460B2F69CF3CF8E616 /* MQTTSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTSessionManager.h; path = MQTTClient/MQTTClient/MQTTSessionManager.h; sourceTree = "<group>"; };
+		DC6F1DC9F8BC46D27AD091229FCA5BDA /* MCAAuthorizationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAAuthorizationManager.swift; path = Source/mca/api/MCAAuthorizationManager.swift; sourceTree = "<group>"; };
+		DD6FEA872781CD3E4830F757DB1112AE /* MQTTSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTSession.h; path = MQTTClient/MQTTClient/MQTTSession.h; sourceTree = "<group>"; };
 		DFBEAB3E631A51CD146B989C2E43AC72 /* Pods-VehicleMonitoring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VehicleMonitoring-umbrella.h"; sourceTree = "<group>"; };
 		E362CF246DC424C52FCD4296E5EB075D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E3B4F204BA905879F5BD3C0B4E52F0CC /* BMSSecurity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMSSecurity-dummy.m"; sourceTree = "<group>"; };
-		E45A3888CC97DEA6955BA5586372085B /* read_handle_shared.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle_shared.c; path = libmosquitto/read_handle_shared.c; sourceTree = "<group>"; };
-		E61410F543F298D2FB0DBD7EA5CA197A /* read_handle.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle.c; path = libmosquitto/read_handle.c; sourceTree = "<group>"; };
-		E80B08A7734418835E7F772EF33F26E5 /* BMSCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMSCore-dummy.m"; sourceTree = "<group>"; };
+		E46AFD8814C37E95A91B1C08B6482765 /* MCAAppIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAAppIdentity.swift; path = Source/mca/api/identity/MCAAppIdentity.swift; sourceTree = "<group>"; };
+		E71DC5A9DA2CEAF0D8438A8F9B3FB080 /* MQTTSSLSecurityPolicyEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTSSLSecurityPolicyEncoder.m; path = MQTTClient/MQTTClient/MQTTSSLSecurityPolicyEncoder.m; sourceTree = "<group>"; };
+		E8FE557627C992954C81137805039029 /* MQTTInMemoryPersistence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTInMemoryPersistence.h; path = MQTTClient/MQTTClient/MQTTInMemoryPersistence.h; sourceTree = "<group>"; };
+		EB9248479E0802D42B34DB8105BCCD57 /* MQTTInMemoryPersistence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTInMemoryPersistence.m; path = MQTTClient/MQTTClient/MQTTInMemoryPersistence.m; sourceTree = "<group>"; };
+		EB9F2821AF6C74C6407DE31177952023 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		EFA69A2EB0E78A790D108B8FB3999A39 /* MCADeviceIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCADeviceIdentity.swift; path = Source/mca/api/identity/MCADeviceIdentity.swift; sourceTree = "<group>"; };
 		F06B950A47727F24F40963D5EE654A02 /* Pods-VehicleMonitoring-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VehicleMonitoring-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F0BBD5007AF0A21234D31C4428B3A5D7 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = Source/Resources/module.modulemap; sourceTree = "<group>"; };
-		F0D51D2390DD9613F10E52AADCB8430E /* MCADeviceIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCADeviceIdentity.swift; path = Source/mca/api/identity/MCADeviceIdentity.swift; sourceTree = "<group>"; };
-		F34B7A8A91D07E969BB6A6AC5207E2DA /* logging_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging_mosq.h; path = libmosquitto/logging_mosq.h; sourceTree = "<group>"; };
-		F47409FEFEFCB272B4FA16B235F0AD55 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = "Source/Network Requests/Request.swift"; sourceTree = "<group>"; };
-		F766674394201CE020BD461A5A6329C1 /* MCAUserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAUserIdentity.swift; path = Source/mca/api/identity/MCAUserIdentity.swift; sourceTree = "<group>"; };
+		F14404E4886C0714B7BB8A3527284224 /* MQTTKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MQTTKit-dummy.m"; sourceTree = "<group>"; };
+		F199F005A535501EE2173E62BE680F6A /* BMSCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BMSCore.modulemap; sourceTree = "<group>"; };
+		F1BC4DB3A967DA2D0BBAF85A60079B8E /* MQTTSessionSynchron.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTSessionSynchron.h; path = MQTTClient/MQTTClient/MQTTSessionSynchron.h; sourceTree = "<group>"; };
+		F28B7B9F2197C442035BBA6F8E20FB72 /* MQTTTransport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTTransport.m; path = MQTTClient/MQTTClient/MQTTTransport.m; sourceTree = "<group>"; };
+		F43B175B5ECB9B176203B96C707CA1FA /* BMSCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSCore-prefix.pch"; sourceTree = "<group>"; };
+		F4DF06AACB1BA9ED14549408B4DBB1A3 /* BMSAnalyticsAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BMSAnalyticsAPI-dummy.m"; sourceTree = "<group>"; };
+		F5E1520564A7B5AFF39C85256715ABC8 /* mqtt3_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = libmosquitto/mqtt3_protocol.h; sourceTree = "<group>"; };
+		F631047B336406FDE661287BB53F2186 /* MQTTCFSocketDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTCFSocketDecoder.m; path = MQTTClient/MQTTClient/MQTTCFSocketDecoder.m; sourceTree = "<group>"; };
 		F9BED12742B7FCB30E548F85FBF23D4F /* BMSAnalyticsAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSAnalyticsAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3FF6C12AD37ABC408F92F09A8D9A9D /* Pods-VehicleMonitoring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VehicleMonitoring.release.xcconfig"; sourceTree = "<group>"; };
-		FA7C45EE62E0B21FA9807DA3A8CBD96F /* BMSSecurity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSSecurity-umbrella.h"; sourceTree = "<group>"; };
+		FA9AE169A1306ED8FBD029A4AB42852B /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = libmosquitto/config.h; sourceTree = "<group>"; };
+		FCB4CA5EE6606D461C4CDA826FAE5A5C /* MQTTDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTDecoder.h; path = MQTTClient/MQTTClient/MQTTDecoder.h; sourceTree = "<group>"; };
+		FE1CD6B307B18E96FD31BB61A6970D92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEB1C45F3B18BEDFDB30A6796D1C8668 /* MQTTDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTDecoder.m; path = MQTTClient/MQTTClient/MQTTDecoder.m; sourceTree = "<group>"; };
+		FF2A1F533FC0B472F66F409BF9A89672 /* AuthenticationContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationContext.swift; path = Source/mca/api/AuthenticationContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8439B33C0B610E9E13EBE69601FE49EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75BAF48F8B61C56C90CC82873E196BA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8BAC922A910717987A76F07E0407D7D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,19 +372,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D01686DD2F46E51B67CAE94D2FB28BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3EACB063EF5F764D2486203A60A7D395 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9DA59CE97CFE8530E4134D706D714D6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3D5CCAAD3FFF202C65395AD5C40C38BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A010F6324F8E6E11DBB10610A9CCE54C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B7983C78F314F452283A05BC2175B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,109 +409,145 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		001521032EA547A79D28E1E057777300 /* MQTTKit */ = {
+		029AC44AF4BC683949FB9B76AFDDB349 /* MQTTKit */ = {
 			isa = PBXGroup;
 			children = (
-				AD6A81BA453C908ED1BD13C3B1CACBDB /* config.h */,
-				22517DEE8F420A752C9D920B8FF105FE /* dummypthread.h */,
-				7A5589DE20CE054DD1C7527707EA4E12 /* logging_mosq.c */,
-				F34B7A8A91D07E969BB6A6AC5207E2DA /* logging_mosq.h */,
-				0A29699567CB48F1619BF32133C57971 /* memory_mosq.c */,
-				603C0295EE011346D2559DB32C1B3B28 /* memory_mosq.h */,
-				AB8044A8F39AF12CAF3155CE7DB3E5E3 /* messages_mosq.c */,
-				5B67FC4BAE1B055CF1F6726DE850F535 /* messages_mosq.h */,
-				5ACA9AA4DEF08680309220EAA0E84039 /* mosquitto.c */,
-				ADD28407CE993C7950705F7C46DE4C71 /* mosquitto.h */,
-				711B5A9CFD91102DBCEBA2FA5FF44BF5 /* mosquitto_internal.h */,
-				89DF72B09D09685B1CF7CE2269B704A7 /* mqtt3_protocol.h */,
-				0F45D321BE60FCFB4C6C80154EED822C /* MQTTKit.h */,
-				6EFE9D536A06EA075F2CD47E6B8EEBF2 /* MQTTKit.m */,
-				AABE203B155FBFB59AA7BFCA9B4B791E /* net_mosq.c */,
-				8E593C243300B05CE2BDCD3DA30D3842 /* net_mosq.h */,
-				E61410F543F298D2FB0DBD7EA5CA197A /* read_handle.c */,
-				5DAAF638D10F7218A0D74B6A594B5C9F /* read_handle.h */,
-				A11C0604DD14357906598D2D7AF02A82 /* read_handle_client.c */,
-				E45A3888CC97DEA6955BA5586372085B /* read_handle_shared.c */,
-				964BF3B5DD60AA661738832355B78E38 /* send_client_mosq.c */,
-				84789F3CFADB7DC63D84D92671C030E8 /* send_mosq.c */,
-				BC5C920FF425FAE28014104E67354435 /* send_mosq.h */,
-				A950BAA19F30BC36EB88B39C109D38AA /* thread_mosq.c */,
-				996A4E03E5A7CFAFE72DDAC8CE68869A /* time_mosq.c */,
-				5FF9AB5B84A607E0E5EBDC7C6DE5C2B3 /* time_mosq.h */,
-				34013CE238EC82A5322BF067AF0F1812 /* tls_mosq.c */,
-				59DE5808A1DB6224EA796D9C4FE6E758 /* tls_mosq.h */,
-				3C0C325E3232CC2CBEBD29933A9E135B /* util_mosq.c */,
-				4396A22E3CE7449784F9AD18BE1E24A6 /* util_mosq.h */,
-				9803807142255889D23CE8EA58BC0F11 /* will_mosq.c */,
-				DED390206CC36AEB64D39A028BBA5B91 /* will_mosq.h */,
-				EA638A33C0EF71FF0345EBC9AD7A955C /* Support Files */,
+				FA9AE169A1306ED8FBD029A4AB42852B /* config.h */,
+				0AC9E9D7E5FC50E5618546C9F1B14CE7 /* dummypthread.h */,
+				1EDFF7E2828FFFDCDFF6C5B25A9D1A48 /* logging_mosq.c */,
+				BB145EA1B2F4B1A69BFFC446A3E09CF0 /* logging_mosq.h */,
+				4C4ECD0EE9D2B2B0BBCF9D4731A04565 /* memory_mosq.c */,
+				3001B89BAAA9156F98F8BA5409DE2612 /* memory_mosq.h */,
+				868F65DBA100F780135C7C81D7FC1FB4 /* messages_mosq.c */,
+				68FB23DD5302A9ADA48A18813F12162D /* messages_mosq.h */,
+				BA39B90D2B744B73892611AA829897A9 /* mosquitto.c */,
+				B0B0F5825F2A66A69A1C32551787FB1A /* mosquitto.h */,
+				9496F8BA9EEE6A90B3CD6DE7213963DD /* mosquitto_internal.h */,
+				F5E1520564A7B5AFF39C85256715ABC8 /* mqtt3_protocol.h */,
+				BE71F2E27AD97C71DD3FBF905CDC0235 /* MQTTKit.h */,
+				9A0FBCFB43DC5468496B8A697E89F2CF /* MQTTKit.m */,
+				6CA5B7D3CC65143E62BCA0D8309F4009 /* net_mosq.c */,
+				205984E7B6F9F19F01C9003A0BBA2CB4 /* net_mosq.h */,
+				2B722117058D9C67FED9B78A81282197 /* read_handle.c */,
+				402E013C8E35FF5FB5C5BA4B1DA6B97D /* read_handle.h */,
+				2C222AC128482438471DD19EC807B116 /* read_handle_client.c */,
+				681B19A9E84F761BF7909BD41DC5FBBF /* read_handle_shared.c */,
+				4E806CC79F8DCCE63D4E77B6A2111963 /* send_client_mosq.c */,
+				09AB3DD153D299CFBD33CAFFEB72E803 /* send_mosq.c */,
+				27889ED869057DCE3BBE9C98EDCB4705 /* send_mosq.h */,
+				D6050A12EF80E28C6059EBC15C839D99 /* thread_mosq.c */,
+				C432AA915CEE0D046FBBC25675421F82 /* time_mosq.c */,
+				35BDAF022120E5B880BB26A1F2498FC6 /* time_mosq.h */,
+				D92EFEE82127FEC6C692989B155C7EE1 /* tls_mosq.c */,
+				1D19ADB6E431EAFEF627A55E12C2A996 /* tls_mosq.h */,
+				8D31192D5FEDB1E6611C9F0A93F4B212 /* util_mosq.c */,
+				39F58F459A2310255BCD623DF8A12CC2 /* util_mosq.h */,
+				1AAE1E184E7F12BA55C17478EB447024 /* will_mosq.c */,
+				31C8FE2924411CA3167804C31FD6A9AE /* will_mosq.h */,
+				F60D80E80906A246A48D26AD0E329B93 /* Support Files */,
 			);
 			path = MQTTKit;
 			sourceTree = "<group>";
 		};
-		015C12FB442024CA33B57E5398E73B05 /* Products */ = {
+		0DD267F48EB5C1DAD9ABAF01D0C2FE76 /* BMSCore */ = {
 			isa = PBXGroup;
 			children = (
-				D8EDB19BC2D63471316749C9785D72C2 /* BMSAnalyticsAPI.framework */,
-				3AA9730C5FA40F63C01ED2454CC65821 /* BMSCore.framework */,
-				DFAF91910BFE01FEC0A38DAED355834C /* BMSSecurity.framework */,
-				BBE68A7B8A64BC4F6E391E7CE4D9EB2B /* MQTTKit.framework */,
-				C3A565AB5EE5B0C2FCE1A1AB35CA0ED5 /* Pods_VehicleMonitoring.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		07C78ED390C93B9B1F7E869A86713F3D /* BMSCore */ = {
-			isa = PBXGroup;
-			children = (
-				CD7C12D8EF8A6F936FC4B45BB9EED6F7 /* AppIdentity.swift */,
-				732D5368DA140AAD523AA9420061F3EA /* AuthorizationManager.swift */,
-				91132B078BDF5F2FFB67795B700295D5 /* BaseAppIdentity.swift */,
-				8F94D3FB7A6EBC9196485CE1F32364EF /* BaseAuthorizationManager.swift */,
-				1F17ABBC2F577AA8DBF23255DA08F7EF /* BaseDeviceIdentity.swift */,
-				7045C3D5A07FCD26FB57FACCBF8270C1 /* BaseRequest.swift */,
-				B38DC84A7AF25451C6254B4A0D990E8D /* BaseUserIdentity.swift */,
-				AB52BFF18BB89B16641C75FA1B6CE1DD /* BMSClient.swift */,
-				3B359D5467BEBDA4CB105913A849C6E7 /* BMSCore.h */,
-				9B2A2352ADE3F4C5372B28D4E0CBB3EB /* BMSURLSession.swift */,
-				1543758C293B143E79764EDE256B99D7 /* BMSURLSessionDelegate.swift */,
-				204BC88FC1344B9C2540D41F74716560 /* DeviceIdentity.swift */,
-				4CB7B20A4786E9AB0BBE72BFABED920A /* Error.swift */,
-				F0BBD5007AF0A21234D31C4428B3A5D7 /* module.modulemap */,
-				F47409FEFEFCB272B4FA16B235F0AD55 /* Request.swift */,
-				336AE515862403E292D0D008D804B8B7 /* Response.swift */,
-				9DB06DFDE3A584016CE4D2D605642468 /* UserIdentity.swift */,
-				63CE75C548102AD7EBEBE24917CE6A1D /* Support Files */,
+				B75AA8F9A3E8BF7D3B8A8144721B2FFF /* AppIdentity.swift */,
+				A312CB1A79282D496AE60003D7566315 /* AuthorizationManager.swift */,
+				64034082F05C02EFF23BF3B9C053A17A /* BaseAppIdentity.swift */,
+				B728AAF775AF8BE7F8F0E93EE60286CA /* BaseAuthorizationManager.swift */,
+				274BC978F2E436EF8E2A8CACB3E62869 /* BaseDeviceIdentity.swift */,
+				701EBFA5DBF0133CCEB2D307FBA5DE82 /* BaseRequest.swift */,
+				1350719C24F63C91A17971F782C2A0CC /* BaseUserIdentity.swift */,
+				6F9EAB2A5902297111CF67F3FF6E494F /* BMSClient.swift */,
+				B596AFD94FC0B61988CA71401E13F935 /* BMSCore.h */,
+				CCCE8CBC90576F2ED5B2CBAE566857B9 /* BMSURLSession.swift */,
+				91B9BAC9486BC6F5871F340394A1894A /* BMSURLSessionDelegate.swift */,
+				001A9455F3EA33DA829DE465CF0051C5 /* DeviceIdentity.swift */,
+				EB9F2821AF6C74C6407DE31177952023 /* Error.swift */,
+				4573B8000A31A325759A15D0C174870A /* module.modulemap */,
+				A57C30EC82812EC619CD20CFDCD54E8E /* Request.swift */,
+				BBF503C38FAB57E3898161A48087D906 /* Response.swift */,
+				8394F4C54DFE086CE0F3DB07DF91B1C3 /* UserIdentity.swift */,
+				1610232B2623EBD00A2BFDCA5CFAC7B1 /* Support Files */,
 			);
 			path = BMSCore;
 			sourceTree = "<group>";
 		};
-		1490D06F24ECE1227B5786F7EBFC57DA /* Support Files */ = {
+		1610232B2623EBD00A2BFDCA5CFAC7B1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BFF9A9A20EA96D47FB7C15EDD64C1A48 /* BMSAnalyticsAPI.modulemap */,
-				533ED475AE20ADBB72FE1F509D6A3CCF /* BMSAnalyticsAPI.xcconfig */,
-				331D0A636C2F5B990AF88F7DD1408358 /* BMSAnalyticsAPI-dummy.m */,
-				3CE9B9383ED6972EE5664D7A2246CE92 /* BMSAnalyticsAPI-prefix.pch */,
-				2037560ACE96713DCDE1608BDBC7C9B4 /* BMSAnalyticsAPI-umbrella.h */,
-				21DC8D3D6ABB3B638C2CCA662141AAED /* Info.plist */,
+				F199F005A535501EE2173E62BE680F6A /* BMSCore.modulemap */,
+				3BA7B74843C8EEFC2923D5AA74199AA3 /* BMSCore.xcconfig */,
+				86DB8A68BC32E8D9502F3593907DD78E /* BMSCore-dummy.m */,
+				F43B175B5ECB9B176203B96C707CA1FA /* BMSCore-prefix.pch */,
+				18529BCECF349E37A7EF7043EBE50542 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BMSAnalyticsAPI";
+			path = "../Target Support Files/BMSCore";
 			sourceTree = "<group>";
 		};
-		15BDB5A9F1FE3D3FB147D66A3702F2A3 /* Support Files */ = {
+		2101A8070E8A8A891609BB9D1F7F6FB6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A1967F6B7A17247426013A8B0F42FA2D /* BMSSecurity.modulemap */,
-				B96546A97D2F8274D9B8669B725FD95B /* BMSSecurity.xcconfig */,
-				E3B4F204BA905879F5BD3C0B4E52F0CC /* BMSSecurity-dummy.m */,
-				3924EF23C666CCADC2FD6C98ACC5E0CD /* BMSSecurity-prefix.pch */,
-				FA7C45EE62E0B21FA9807DA3A8CBD96F /* BMSSecurity-umbrella.h */,
-				DFBE2CA4221053E77FE84F7CDC64EEB3 /* Info.plist */,
+				495FD7913A83959B78A3875C9797BB93 /* BMSSecurity.modulemap */,
+				4DDEBA2B2C10E00DD6493CAE9E8886FD /* BMSSecurity.xcconfig */,
+				913EB4EA3B5A606603575B44AC85D60C /* BMSSecurity-dummy.m */,
+				4E563C59176B3B9F3BE25E882C8960FF /* BMSSecurity-prefix.pch */,
+				7456CEF75DF71161A9AF6A025CB3612C /* BMSSecurity-umbrella.h */,
+				A81ECA99C8BCB74B0A38E8E398BCA48B /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BMSSecurity";
+			sourceTree = "<group>";
+		};
+		33E72AAF66C4816A76E4212030CD0CBB /* Min */ = {
+			isa = PBXGroup;
+			children = (
+				2135E05255AB996DD9CFC32A901B590C /* MQTTCFSocketDecoder.h */,
+				F631047B336406FDE661287BB53F2186 /* MQTTCFSocketDecoder.m */,
+				939A31F0B6D04B03D9DB960CE53F28A1 /* MQTTCFSocketEncoder.h */,
+				70C1C5F92D7D2FF339FBFBA43CFF5599 /* MQTTCFSocketEncoder.m */,
+				7DD73F8DBD5AACE3EC660CF16D0CA150 /* MQTTCFSocketTransport.h */,
+				68254F2E7E4A6806A53E381E7BF9D0CD /* MQTTCFSocketTransport.m */,
+				A75841789FDA73C9230D3DD9DC7916DF /* MQTTClient.h */,
+				107976F15C6727DD3434C1A431D7EE2E /* MQTTCoreDataPersistence.h */,
+				63DD2BB17560D1F4528BB54AB459B2EC /* MQTTCoreDataPersistence.m */,
+				FCB4CA5EE6606D461C4CDA826FAE5A5C /* MQTTDecoder.h */,
+				FEB1C45F3B18BEDFDB30A6796D1C8668 /* MQTTDecoder.m */,
+				E8FE557627C992954C81137805039029 /* MQTTInMemoryPersistence.h */,
+				EB9248479E0802D42B34DB8105BCCD57 /* MQTTInMemoryPersistence.m */,
+				9C6D3AD1BAE0F744ACAA71778844BB23 /* MQTTLog.h */,
+				C1AF7654D6148D38E88CE8D3F7380D97 /* MQTTMessage.h */,
+				5FCC895CB452E77B02B598F85D0D6411 /* MQTTMessage.m */,
+				ABAAC0D1F3480566DEAD5636F34A7F71 /* MQTTPersistence.h */,
+				DD6FEA872781CD3E4830F757DB1112AE /* MQTTSession.h */,
+				61CB4FF43985BD687868CB6EBFC5FD91 /* MQTTSession.m */,
+				5E9CCA99F488253958B2DA9DE6431A83 /* MQTTSessionLegacy.h */,
+				03D62D6CE62E6AA45337E28C85F82A80 /* MQTTSessionLegacy.m */,
+				F1BC4DB3A967DA2D0BBAF85A60079B8E /* MQTTSessionSynchron.h */,
+				072604A16468253AAA8E25B29F61B150 /* MQTTSessionSynchron.m */,
+				7673C1BF43B920AE82340CE18005EDA9 /* MQTTSSLSecurityPolicy.h */,
+				0B039529C752BB72A6DB6C36E39E45E1 /* MQTTSSLSecurityPolicy.m */,
+				BD508B2A4D14C29D224450B58BF5CE8C /* MQTTSSLSecurityPolicyDecoder.h */,
+				4038D2F6A4F151FCDCD49077300FBC33 /* MQTTSSLSecurityPolicyDecoder.m */,
+				D7ADB9C4DD3E53C3BA5B79097583BA45 /* MQTTSSLSecurityPolicyEncoder.h */,
+				E71DC5A9DA2CEAF0D8438A8F9B3FB080 /* MQTTSSLSecurityPolicyEncoder.m */,
+				5B3CD9ED1296FDD322CAD59DAB9F48F4 /* MQTTSSLSecurityPolicyTransport.h */,
+				0EEE144A6948FBB53C5470DAB0006D6D /* MQTTSSLSecurityPolicyTransport.m */,
+				8E79F2CDC2C47CF631D4600D863D0A44 /* MQTTTransport.h */,
+				F28B7B9F2197C442035BBA6F8E20FB72 /* MQTTTransport.m */,
+			);
+			name = Min;
+			sourceTree = "<group>";
+		};
+		3EF8E47472758FEA0791DAEC20160631 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				B3D8C719C2A017534027AB776177D483 /* Frameworks */,
+				F8261FAE14ECD9CF56D2DBA6D711A6B5 /* Resources */,
+			);
+			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
 		40E221878EC825BECC508D82253244EC /* iOS */ = {
@@ -421,17 +558,58 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		63CE75C548102AD7EBEBE24917CE6A1D /* Support Files */ = {
+		45F2F5396ECCDD3CCD2A50D163C7AE02 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				1CEC6F34A825E144BD729F9E6623DBD8 /* BMSCore.modulemap */,
-				7F9B98CEC7B2000A914DC1AA01AC82EA /* BMSCore.xcconfig */,
-				E80B08A7734418835E7F772EF33F26E5 /* BMSCore-dummy.m */,
-				1B5E488E35736F451A20F4C8959D0996 /* BMSCore-prefix.pch */,
-				BF2BF9C0CCE6A400BE7926527F4F2ACC /* Info.plist */,
+				E3F493E9FB1D03A6A0592928C61E55F4 /* Frameworks */,
+				F49093BC72081A3E60E5462184CEE15E /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		45F56444038BF43E93327556699C545E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2A2CF2432735D30B3A88382E130D3 /* BMSAnalyticsAPI */,
+				0DD267F48EB5C1DAD9ABAF01D0C2FE76 /* BMSCore */,
+				EE7AAAC1429971936ED06D7E93644187 /* BMSSecurity */,
+				E7FDEEFDED32F8C9293740E1260DF1F3 /* GoogleMaps */,
+				3EF8E47472758FEA0791DAEC20160631 /* GooglePlaces */,
+				FB3D95BA35CAF3A24256704943A7291F /* MQTTClient */,
+				029AC44AF4BC683949FB9B76AFDDB349 /* MQTTKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B8B9ECAE1FF885A55A1E80A7D76A86A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9B75317B13F7D4EEA38ADAC8097C2C71 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		650D0AEA5E1A4D9D5B779D29A494913E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				04980EA544D18CF447589196F6ADA87D /* Info.plist */,
+				02695D1F9EDB8316519CA3875CF49394 /* MQTTClient.modulemap */,
+				48EFD10F0CD632CF2C79E73448DD44DF /* MQTTClient.xcconfig */,
+				56EC5A7E2FD432112924A8BE58073FCF /* MQTTClient-dummy.m */,
+				2B68D4C72AF84E29ABE9C369F411A4CD /* MQTTClient-prefix.pch */,
+				240C3195FE3EC56D21A7E513A7F25D4F /* MQTTClient-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/BMSCore";
+			path = "../Target Support Files/MQTTClient";
+			sourceTree = "<group>";
+		};
+		6D80371B66463D706CF99A7BFA97A3D2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D9F23B1FBDA792460B2F69CF3CF8E616 /* MQTTSessionManager.h */,
+				9DBAC2496419AF24FEF9F005FB24C39A /* MQTTSessionManager.m */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -439,10 +617,24 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				DA35764551F26AD51B58720E2AC8FB93 /* Frameworks */,
-				C27D603E75C800973E6D2FD36E0E96D3 /* Pods */,
-				015C12FB442024CA33B57E5398E73B05 /* Products */,
+				45F56444038BF43E93327556699C545E /* Pods */,
+				98062F8ACAC642C8931E81482C8D1287 /* Products */,
 				FACFFF040F0EC6C530AB1F683A243182 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		94A2565EAAB22FADE5D5DA9B5DA798B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B2DAF61443D2035D7B6BD1EF8701D7A /* BMSAnalyticsAPI.modulemap */,
+				324A21E89914BFCB17D4E3343D4AFDAD /* BMSAnalyticsAPI.xcconfig */,
+				F4DF06AACB1BA9ED14549408B4DBB1A3 /* BMSAnalyticsAPI-dummy.m */,
+				29795BA9D1CA3AF0629BC64AD3B2F32F /* BMSAnalyticsAPI-prefix.pch */,
+				A70995856720F3330F91EBE08F8A8724 /* BMSAnalyticsAPI-umbrella.h */,
+				FE1CD6B307B18E96FD31BB61A6970D92 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BMSAnalyticsAPI";
 			sourceTree = "<group>";
 		};
 		9802E16F3F551409455801B61F6F8358 /* Pods-VehicleMonitoring */ = {
@@ -463,23 +655,41 @@
 			path = "Target Support Files/Pods-VehicleMonitoring";
 			sourceTree = "<group>";
 		};
-		C27D603E75C800973E6D2FD36E0E96D3 /* Pods */ = {
+		98062F8ACAC642C8931E81482C8D1287 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7C7DBE77BA7B3895FCC6D6A93DA8BF2 /* BMSAnalyticsAPI */,
-				07C78ED390C93B9B1F7E869A86713F3D /* BMSCore */,
-				EB4491BE86813B2D5A69709C4759DE35 /* BMSSecurity */,
-				001521032EA547A79D28E1E057777300 /* MQTTKit */,
+				D956CBAB31D21C20538A0D7E7835F8DF /* BMSAnalyticsAPI.framework */,
+				02419D3B9F9B6E86A25873F24D465674 /* BMSCore.framework */,
+				697B80EBE30C7247C4F9FD3A77683035 /* BMSSecurity.framework */,
+				585EED31094D4FFAD3E55E999A9FF99E /* MQTTClient.framework */,
+				A5C08B3BE187C0B1D363974524B92C8F /* MQTTKit.framework */,
+				0CE77F97E617654800479187F1759CC4 /* Pods_VehicleMonitoring.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		D7C7DBE77BA7B3895FCC6D6A93DA8BF2 /* BMSAnalyticsAPI */ = {
+		9B75317B13F7D4EEA38ADAC8097C2C71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22BE0C3511B18BB3E3DDB9498A68A793 /* Analytics.swift */,
-				8D3F75B9D831EA5B1B60284C2E83CAA3 /* Logger.swift */,
-				1490D06F24ECE1227B5786F7EBFC57DA /* Support Files */,
+				3D6118F5E5F3470E8C429526EF3CDD06 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3D8C719C2A017534027AB776177D483 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA79548CD2362FBD4EA371C4CFA16E4A /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5C2A2CF2432735D30B3A88382E130D3 /* BMSAnalyticsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6C9DC7C2132C16A38953E613EA823D2D /* Analytics.swift */,
+				7FFBAEAE527FF7F9AFF36B487805DFB6 /* Logger.swift */,
+				94A2565EAAB22FADE5D5DA9B5DA798B9 /* Support Files */,
 			);
 			path = BMSAnalyticsAPI;
 			sourceTree = "<group>";
@@ -494,44 +704,78 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EA638A33C0EF71FF0345EBC9AD7A955C /* Support Files */ = {
+		E3F493E9FB1D03A6A0592928C61E55F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ACB95723EA5542C1BBF8DCAE19C58BEA /* Info.plist */,
-				959252FAA78105AA9127D8EE5B65FA6D /* MQTTKit.modulemap */,
-				750791AA3ABA6628D03FD059ACDBB874 /* MQTTKit.xcconfig */,
-				B8CF774232B0D4A86F6799382FC67A00 /* MQTTKit-dummy.m */,
-				D2117BB04D32F5D001AAA05B1B305FC4 /* MQTTKit-prefix.pch */,
-				27358856F778C9EC301D7F33949795D0 /* MQTTKit-umbrella.h */,
+				B1BBDAEB575BE140661E221E5089A545 /* GoogleMaps.framework */,
+				CE6C40BFF43F5280287C6256BE65A325 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7FDEEFDED32F8C9293740E1260DF1F3 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				5B8B9ECAE1FF885A55A1E80A7D76A86A /* Base */,
+				45F2F5396ECCDD3CCD2A50D163C7AE02 /* Maps */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		EE7AAAC1429971936ED06D7E93644187 /* BMSSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				FF2A1F533FC0B472F66F409BF9A89672 /* AuthenticationContext.swift */,
+				4E1A012BF12AE93A2F404F2AD0FA9F5F /* AuthenticationDelegate.swift */,
+				002DDAD62F33FDAE3187678B3A7A2501 /* AuthorizationManagerPreferences.swift */,
+				305ADD6D44985F188FC5093925A5C9C9 /* AuthorizationProcessManager.swift */,
+				98A5FFA2A8BFA91DA0306C244EF8FEE7 /* AuthorizationRequest.swift */,
+				2EDDF1BA53DCA3A2EFDD8194D93EADA9 /* AuthorizationRequestManager.swift */,
+				2E2053477A9876991F17CD5CC1A20CC2 /* BMSSecurity.h */,
+				C023C4C4AB337375C33FFA166425A54F /* BMSSecurityConstants.swift */,
+				701B6A3CABB0E06EC80511963096BD88 /* BMSSecurityError.swift */,
+				04A7ECFD2A3229DFE47C94C1DB81EF7D /* ChallengeHandler.swift */,
+				E46AFD8814C37E95A91B1C08B6482765 /* MCAAppIdentity.swift */,
+				DC6F1DC9F8BC46D27AD091229FCA5BDA /* MCAAuthorizationManager.swift */,
+				EFA69A2EB0E78A790D108B8FB3999A39 /* MCADeviceIdentity.swift */,
+				804294C9B99083B01F00D90645735DBD /* MCAUserIdentity.swift */,
+				61F1C779DE606C810E0AD24F19E0B06E /* Queue.swift */,
+				CDC3C048D2652B4C0B7FC155AA3A302E /* RequestOptions.swift */,
+				3ACF476374AB5C38FBA0DA1C5A9BDEB2 /* SecurityUtils.swift */,
+				2D2E7D86928FF35DC62E483B099D2739 /* Utils.swift */,
+				2101A8070E8A8A891609BB9D1F7F6FB6 /* Support Files */,
+			);
+			path = BMSSecurity;
+			sourceTree = "<group>";
+		};
+		F49093BC72081A3E60E5462184CEE15E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2245F6C5013E18F846613A95B53A37E7 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F60D80E80906A246A48D26AD0E329B93 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68BDD1044548F03F98544A0BCF18F77A /* Info.plist */,
+				8DAE118AFF2A2693D14A83E7EABF5F47 /* MQTTKit.modulemap */,
+				92EFDBBF72BEC0174BC09199A071EAF8 /* MQTTKit.xcconfig */,
+				F14404E4886C0714B7BB8A3527284224 /* MQTTKit-dummy.m */,
+				5CA4CA9699DC9134FE6DCF30E6235A31 /* MQTTKit-prefix.pch */,
+				56848066D32B5B665EBE4FC74529470C /* MQTTKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MQTTKit";
 			sourceTree = "<group>";
 		};
-		EB4491BE86813B2D5A69709C4759DE35 /* BMSSecurity */ = {
+		F8261FAE14ECD9CF56D2DBA6D711A6B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B9E76ECEAA8BEAD15563679E67C71517 /* AuthenticationContext.swift */,
-				7A9E8631BDC9F399A3FC27ABD496FFC7 /* AuthenticationDelegate.swift */,
-				24A4F9BE5C7E7B3C02FF1C0BCFB4ABC9 /* AuthorizationManagerPreferences.swift */,
-				1BA712BE48B8836DF4688BB64DD9DEDE /* AuthorizationProcessManager.swift */,
-				CC2559C46BB3795C2C8F4E2C262251B3 /* AuthorizationRequest.swift */,
-				C2D0E6145CE292D233F06047A554725C /* AuthorizationRequestManager.swift */,
-				B8148BD4F17D10C7799F4A79B4BA3B14 /* BMSSecurity.h */,
-				616DE1101B6EDFB59F51DC1C96FBCDA9 /* BMSSecurityConstants.swift */,
-				3789DA492B7B9113F8831CA7EC7A4968 /* BMSSecurityError.swift */,
-				D5BDF9F7012E3CB3C50EE08665CB80AC /* ChallengeHandler.swift */,
-				CB67EA81193F68CCF7F7C18E477D4735 /* MCAAppIdentity.swift */,
-				7EBF9AEBD578E7159A09124271E990D1 /* MCAAuthorizationManager.swift */,
-				F0D51D2390DD9613F10E52AADCB8430E /* MCADeviceIdentity.swift */,
-				F766674394201CE020BD461A5A6329C1 /* MCAUserIdentity.swift */,
-				CB21C5CFDA2EECA1B41C0ECE9DDC6C1C /* Queue.swift */,
-				379AB07A7EDFEA3DC74EDFC4C2096DF1 /* RequestOptions.swift */,
-				74B2576509DD0F591D9B17423EDE9B1A /* SecurityUtils.swift */,
-				413A2F15FC146309381941C6C5518842 /* Utils.swift */,
-				15BDB5A9F1FE3D3FB147D66A3702F2A3 /* Support Files */,
+				41AF0EF3FF8605BC1F2E181F57CC50FF /* GooglePlaces.bundle */,
 			);
-			path = BMSSecurity;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FACFFF040F0EC6C530AB1F683A243182 /* Targets Support Files */ = {
@@ -542,9 +786,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		FB3D95BA35CAF3A24256704943A7291F /* MQTTClient */ = {
+			isa = PBXGroup;
+			children = (
+				6D80371B66463D706CF99A7BFA97A3D2 /* Manager */,
+				33E72AAF66C4816A76E4212030CD0CBB /* Min */,
+				650D0AEA5E1A4D9D5B779D29A494913E /* Support Files */,
+			);
+			path = MQTTClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0A40B679E485E50E11ED3AF1AB899610 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB914C6645ACD66A92C0A6B1450BF4E8 /* MQTTCFSocketDecoder.h in Headers */,
+				99B5F9C4BD8F75AE13923EA44EF6AD03 /* MQTTCFSocketEncoder.h in Headers */,
+				7898EBF920BBFE9E9A62E96E3F23B1E8 /* MQTTCFSocketTransport.h in Headers */,
+				0770B158ABA5605CCDC0828ADB62DE2E /* MQTTClient-umbrella.h in Headers */,
+				687849FC82CF9BE953659957A3B64086 /* MQTTClient.h in Headers */,
+				882D462BD1AE964A3E66145AF578A1FF /* MQTTCoreDataPersistence.h in Headers */,
+				31E2552DF96CB9A48E649EBDB8F56C42 /* MQTTDecoder.h in Headers */,
+				3DAF212740B059BCB0B7C0F06D77F6B2 /* MQTTInMemoryPersistence.h in Headers */,
+				9C6FAA6A23172AAF1E48399BC798B1DB /* MQTTLog.h in Headers */,
+				861076B27CC6C31B4981948383D59460 /* MQTTMessage.h in Headers */,
+				C1B649FC1F2BF8FAFBFCF0EC0BC2459C /* MQTTPersistence.h in Headers */,
+				D244CAC608CD49FC3D829E7A4E7E1EDB /* MQTTSession.h in Headers */,
+				59A903B5F3F0A442D444D2ED21F81ADF /* MQTTSessionLegacy.h in Headers */,
+				7098F0A389C40B41D7346F0D9888247F /* MQTTSessionManager.h in Headers */,
+				F6ED5CDD00D3FF7231BD347A064D5DA5 /* MQTTSessionSynchron.h in Headers */,
+				995BA3D7C35393F591B2456A03C904E3 /* MQTTSSLSecurityPolicy.h in Headers */,
+				0A71A004BDE7588F8EB7F960D3341CE6 /* MQTTSSLSecurityPolicyDecoder.h in Headers */,
+				2647780A4C25B72048C747162FF527AC /* MQTTSSLSecurityPolicyEncoder.h in Headers */,
+				6F76B03970F8212BEBF02F110516EE48 /* MQTTSSLSecurityPolicyTransport.h in Headers */,
+				E9F5B1DD21F6BFCCDCEF9249CF0EFB16 /* MQTTTransport.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0A70DF327C03DEE51861ACAAA2D1382C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -594,11 +875,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC3775701724DD1655A17E4410B35550 /* Headers */ = {
+		90E88E35B210F1974F53BE913361503D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BC610A03D6802669E2E35D8CF1D35D6 /* Pods-VehicleMonitoring-umbrella.h in Headers */,
+				D8787009C092CC7D3810617FFF188978 /* Pods-VehicleMonitoring-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,28 +901,29 @@
 			);
 			name = BMSCore;
 			productName = BMSCore;
-			productReference = 3AA9730C5FA40F63C01ED2454CC65821 /* BMSCore.framework */;
+			productReference = 02419D3B9F9B6E86A25873F24D465674 /* BMSCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		16FEF2EC6A0AD5A9BDECA0CD3EAB1FCA /* Pods-VehicleMonitoring */ = {
+		15C60607C3A7093932655BE08EB54D67 /* Pods-VehicleMonitoring */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C5E862A12B7E0548F7224B9833A3EBB /* Build configuration list for PBXNativeTarget "Pods-VehicleMonitoring" */;
+			buildConfigurationList = 78D7AFA00E1BAE39BC33589D6A4656E9 /* Build configuration list for PBXNativeTarget "Pods-VehicleMonitoring" */;
 			buildPhases = (
-				C8C2D8352AE25217376EC078EE527EBA /* Sources */,
-				8D01686DD2F46E51B67CAE94D2FB28BC /* Frameworks */,
-				BC3775701724DD1655A17E4410B35550 /* Headers */,
+				3FA039F95FA7C269919BC8D7C7BA8EC0 /* Sources */,
+				A010F6324F8E6E11DBB10610A9CCE54C /* Frameworks */,
+				90E88E35B210F1974F53BE913361503D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E5943448CB1CDBE5867D757764E30A60 /* PBXTargetDependency */,
-				4C81D76D2C7703B34DA0A842BE3B208F /* PBXTargetDependency */,
-				5A44454DF9B39CA86DE31CEE86DC93B7 /* PBXTargetDependency */,
-				C0E98E87246DC7CB20402946EE222241 /* PBXTargetDependency */,
+				90C619D59C511018865DAC5170695F72 /* PBXTargetDependency */,
+				015B94FAFD82058048FE5855FB714AB5 /* PBXTargetDependency */,
+				CF38EC7B0A9F26D69A2BDF01FADD9D2F /* PBXTargetDependency */,
+				6D8FCF6548B3157B906F87BB57A52CA7 /* PBXTargetDependency */,
+				0104A00298BB97C78D4A3BADD0B2A891 /* PBXTargetDependency */,
 			);
 			name = "Pods-VehicleMonitoring";
 			productName = "Pods-VehicleMonitoring";
-			productReference = C3A565AB5EE5B0C2FCE1A1AB35CA0ED5 /* Pods_VehicleMonitoring.framework */;
+			productReference = 0CE77F97E617654800479187F1759CC4 /* Pods_VehicleMonitoring.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		609B4457212358FB9F737E2A6108427D /* MQTTKit */ = {
@@ -658,7 +940,7 @@
 			);
 			name = MQTTKit;
 			productName = MQTTKit;
-			productReference = BBE68A7B8A64BC4F6E391E7CE4D9EB2B /* MQTTKit.framework */;
+			productReference = A5C08B3BE187C0B1D363974524B92C8F /* MQTTKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7CE5ED24D6F62A1F103B9499F648E846 /* BMSSecurity */ = {
@@ -677,7 +959,7 @@
 			);
 			name = BMSSecurity;
 			productName = BMSSecurity;
-			productReference = DFAF91910BFE01FEC0A38DAED355834C /* BMSSecurity.framework */;
+			productReference = 697B80EBE30C7247C4F9FD3A77683035 /* BMSSecurity.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		99B55BA277E5A8747DC03A34ECFE62EE /* BMSAnalyticsAPI */ = {
@@ -694,7 +976,24 @@
 			);
 			name = BMSAnalyticsAPI;
 			productName = BMSAnalyticsAPI;
-			productReference = D8EDB19BC2D63471316749C9785D72C2 /* BMSAnalyticsAPI.framework */;
+			productReference = D956CBAB31D21C20538A0D7E7835F8DF /* BMSAnalyticsAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1B495DA5558BCC077E21573A719B685 /* MQTTClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5B4B2C075EE245FA6C099E17620DC5 /* Build configuration list for PBXNativeTarget "MQTTClient" */;
+			buildPhases = (
+				504B72EF9014FB8646CCA951EEAFEF75 /* Sources */,
+				8439B33C0B610E9E13EBE69601FE49EF /* Frameworks */,
+				0A40B679E485E50E11ED3AF1AB899610 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQTTClient;
+			productName = MQTTClient;
+			productReference = 585EED31094D4FFAD3E55E999A9FF99E /* MQTTClient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -714,20 +1013,53 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 015C12FB442024CA33B57E5398E73B05 /* Products */;
+			productRefGroup = 98062F8ACAC642C8931E81482C8D1287 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				99B55BA277E5A8747DC03A34ECFE62EE /* BMSAnalyticsAPI */,
 				060D779F4F0D4DD050D9E08865879D01 /* BMSCore */,
 				7CE5ED24D6F62A1F103B9499F648E846 /* BMSSecurity */,
+				D1B495DA5558BCC077E21573A719B685 /* MQTTClient */,
 				609B4457212358FB9F737E2A6108427D /* MQTTKit */,
-				16FEF2EC6A0AD5A9BDECA0CD3EAB1FCA /* Pods-VehicleMonitoring */,
+				15C60607C3A7093932655BE08EB54D67 /* Pods-VehicleMonitoring */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3FA039F95FA7C269919BC8D7C7BA8EC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA4A6717ACCB3B039DCCBE4B455C2E3 /* Pods-VehicleMonitoring-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504B72EF9014FB8646CCA951EEAFEF75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED0C60BB5FC6F3734D8F6EE673E485E /* MQTTCFSocketDecoder.m in Sources */,
+				3256F2D2B8682DFFFBCBAEE4497F55D1 /* MQTTCFSocketEncoder.m in Sources */,
+				A10341236337B4CEE1DA3D3DA6CA6E77 /* MQTTCFSocketTransport.m in Sources */,
+				CF7FA4F70A84F351DA78FCFD6CD28527 /* MQTTClient-dummy.m in Sources */,
+				79FE715F133E471E5C297BD366BF0A4E /* MQTTCoreDataPersistence.m in Sources */,
+				C22F9E10334ED5B41BFAFEA55F958A91 /* MQTTDecoder.m in Sources */,
+				C8C7B5552D18687796C62C17EF8649BE /* MQTTInMemoryPersistence.m in Sources */,
+				6DEDFDA3BE0AC1BB11EC47E5375EE5F6 /* MQTTMessage.m in Sources */,
+				6004FEDD653CF7297C7FD5CB5035FE97 /* MQTTSession.m in Sources */,
+				D0EBD89CC5518FABF551410FB4BEBB90 /* MQTTSessionLegacy.m in Sources */,
+				AC44B7975CDC9BBCB2CE48A135496718 /* MQTTSessionManager.m in Sources */,
+				FF41C59D89CF2E451670300D7041EB81 /* MQTTSessionSynchron.m in Sources */,
+				B2D94C9D6696DF559AB8DB71508C9E73 /* MQTTSSLSecurityPolicy.m in Sources */,
+				32B91FFAD9FB63D586BE028F865C97E3 /* MQTTSSLSecurityPolicyDecoder.m in Sources */,
+				B0BF176D76925C2278B6FE83A249E9AF /* MQTTSSLSecurityPolicyEncoder.m in Sources */,
+				15ECB6BA495B2BEE48EFC73278BB5C5C /* MQTTSSLSecurityPolicyTransport.m in Sources */,
+				9C81FF2F391F48FAA1FC06E1C0A77ABD /* MQTTTransport.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58BFF2A6CE973D2659CA6097753401EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,14 +1133,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8C2D8352AE25217376EC078EE527EBA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B13FCD6661A2FCFE8C775F8C7A7AFDF /* Pods-VehicleMonitoring-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DF8DED4489AA29A231F38E1B47D8BEB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -822,17 +1146,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C81D76D2C7703B34DA0A842BE3B208F /* PBXTargetDependency */ = {
+		0104A00298BB97C78D4A3BADD0B2A891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MQTTKit;
+			target = 609B4457212358FB9F737E2A6108427D /* MQTTKit */;
+			targetProxy = 75612B4E116E599F7E2A359E4E9F0AA8 /* PBXContainerItemProxy */;
+		};
+		015B94FAFD82058048FE5855FB714AB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BMSCore;
 			target = 060D779F4F0D4DD050D9E08865879D01 /* BMSCore */;
-			targetProxy = DC11A92910A859CDC317CE85C6338BFD /* PBXContainerItemProxy */;
-		};
-		5A44454DF9B39CA86DE31CEE86DC93B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BMSSecurity;
-			target = 7CE5ED24D6F62A1F103B9499F648E846 /* BMSSecurity */;
-			targetProxy = FC22BC69C75A1D7326EABF962E699DA1 /* PBXContainerItemProxy */;
+			targetProxy = 181D001C44506AF8213072CFF548C32A /* PBXContainerItemProxy */;
 		};
 		6019D0E0BCC03EFC2923313E245E2FA6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -840,23 +1164,29 @@
 			target = 99B55BA277E5A8747DC03A34ECFE62EE /* BMSAnalyticsAPI */;
 			targetProxy = C5633572DFA812D70D3ED26223F2E28A /* PBXContainerItemProxy */;
 		};
-		C0E98E87246DC7CB20402946EE222241 /* PBXTargetDependency */ = {
+		6D8FCF6548B3157B906F87BB57A52CA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MQTTKit;
-			target = 609B4457212358FB9F737E2A6108427D /* MQTTKit */;
-			targetProxy = 932029CA1CA539F44D547E4166C407EC /* PBXContainerItemProxy */;
+			name = MQTTClient;
+			target = D1B495DA5558BCC077E21573A719B685 /* MQTTClient */;
+			targetProxy = EBC7B2D6F44D78C8A908C2F6CBA355A9 /* PBXContainerItemProxy */;
+		};
+		90C619D59C511018865DAC5170695F72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BMSAnalyticsAPI;
+			target = 99B55BA277E5A8747DC03A34ECFE62EE /* BMSAnalyticsAPI */;
+			targetProxy = 7BB9E928E10222F1CDA23BD57C5C0566 /* PBXContainerItemProxy */;
+		};
+		CF38EC7B0A9F26D69A2BDF01FADD9D2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BMSSecurity;
+			target = 7CE5ED24D6F62A1F103B9499F648E846 /* BMSSecurity */;
+			targetProxy = 503119357D69FA9468FDF9B6E9A40300 /* PBXContainerItemProxy */;
 		};
 		DED04BCC12825C45F12D9ECFEA843F61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BMSAnalyticsAPI;
 			target = 99B55BA277E5A8747DC03A34ECFE62EE /* BMSAnalyticsAPI */;
 			targetProxy = 8CD47FF0CD4278BCA5BF220E2BD77593 /* PBXContainerItemProxy */;
-		};
-		E5943448CB1CDBE5867D757764E30A60 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BMSAnalyticsAPI;
-			target = 99B55BA277E5A8747DC03A34ECFE62EE /* BMSAnalyticsAPI */;
-			targetProxy = 3709825A384A4C4356F40BF89544B496 /* PBXContainerItemProxy */;
 		};
 		EA5315C9DB9E2ED0A4FF53EED44061B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -869,7 +1199,7 @@
 /* Begin XCBuildConfiguration section */
 		177C5644A370EBC718202B7CEA5B64B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F9B98CEC7B2000A914DC1AA01AC82EA /* BMSCore.xcconfig */;
+			baseConfigurationReference = 3BA7B74843C8EEFC2923D5AA74199AA3 /* BMSCore.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -897,42 +1227,9 @@
 			};
 			name = Debug;
 		};
-		3CF889982077E85EC7DFBCEB0FCFA509 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA3FF6C12AD37ABC408F92F09A8D9A9D /* Pods-VehicleMonitoring.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-VehicleMonitoring/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VehicleMonitoring/Pods-VehicleMonitoring.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_VehicleMonitoring;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3DA9894FD05423CF41B52283F8DE621E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B96546A97D2F8274D9B8669B725FD95B /* BMSSecurity.xcconfig */;
+			baseConfigurationReference = 4DDEBA2B2C10E00DD6493CAE9E8886FD /* BMSSecurity.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1004,7 +1301,7 @@
 		};
 		4F4D12DE66FF024653D07568D5CB378E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 533ED475AE20ADBB72FE1F509D6A3CCF /* BMSAnalyticsAPI.xcconfig */;
+			baseConfigurationReference = 324A21E89914BFCB17D4E3343D4AFDAD /* BMSAnalyticsAPI.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1033,7 +1330,7 @@
 		};
 		6150AF52A0DCD8B93A572A78E507A941 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 750791AA3ABA6628D03FD059ACDBB874 /* MQTTKit.xcconfig */;
+			baseConfigurationReference = 92EFDBBF72BEC0174BC09199A071EAF8 /* MQTTKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1062,7 +1359,7 @@
 		};
 		684D74FC97ED58498CF3EF38F2840F58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F9B98CEC7B2000A914DC1AA01AC82EA /* BMSCore.xcconfig */;
+			baseConfigurationReference = 3BA7B74843C8EEFC2923D5AA74199AA3 /* BMSCore.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1091,7 +1388,7 @@
 		};
 		960062716276F8B75712FC16C223F07A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B96546A97D2F8274D9B8669B725FD95B /* BMSSecurity.xcconfig */;
+			baseConfigurationReference = 4DDEBA2B2C10E00DD6493CAE9E8886FD /* BMSSecurity.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1118,13 +1415,13 @@
 			};
 			name = Release;
 		};
-		9616C33B290E67EBD9D97D80084CB112 /* Debug */ = {
+		A6E9C7DE5292CBCF2854445ADF0962D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CABAF0CEF19C894F3A4ACEDD0678D74 /* Pods-VehicleMonitoring.debug.xcconfig */;
+			baseConfigurationReference = FA3FF6C12AD37ABC408F92F09A8D9A9D /* Pods-VehicleMonitoring.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1137,7 +1434,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-VehicleMonitoring/Pods-VehicleMonitoring.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1145,16 +1442,15 @@
 				PRODUCT_NAME = Pods_VehicleMonitoring;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		A9BD01EA2192B8F865E136C47DAF6E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 533ED475AE20ADBB72FE1F509D6A3CCF /* BMSAnalyticsAPI.xcconfig */;
+			baseConfigurationReference = 324A21E89914BFCB17D4E3343D4AFDAD /* BMSAnalyticsAPI.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1220,9 +1516,101 @@
 			};
 			name = Release;
 		};
+		AC98165F223C730AC8ADB56F1670EC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48EFD10F0CD632CF2C79E73448DD44DF /* MQTTClient.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MQTTClient/MQTTClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MQTTClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MQTTClient/MQTTClient.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MQTTClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD511CD3C7218BEEAA99C88C7B902649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CABAF0CEF19C894F3A4ACEDD0678D74 /* Pods-VehicleMonitoring.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VehicleMonitoring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VehicleMonitoring/Pods-VehicleMonitoring.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VehicleMonitoring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5F5C6781D1FEDA7353F7C9F5E82D319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48EFD10F0CD632CF2C79E73448DD44DF /* MQTTClient.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MQTTClient/MQTTClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MQTTClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MQTTClient/MQTTClient.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MQTTClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F62CB90CACA712EE589149A1D7A98A37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 750791AA3ABA6628D03FD059ACDBB874 /* MQTTKit.xcconfig */;
+			baseConfigurationReference = 92EFDBBF72BEC0174BC09199A071EAF8 /* MQTTKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1270,11 +1658,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C5E862A12B7E0548F7224B9833A3EBB /* Build configuration list for PBXNativeTarget "Pods-VehicleMonitoring" */ = {
+		78D7AFA00E1BAE39BC33589D6A4656E9 /* Build configuration list for PBXNativeTarget "Pods-VehicleMonitoring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9616C33B290E67EBD9D97D80084CB112 /* Debug */,
-				3CF889982077E85EC7DFBCEB0FCFA509 /* Release */,
+				AD511CD3C7218BEEAA99C88C7B902649 /* Debug */,
+				A6E9C7DE5292CBCF2854445ADF0962D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1284,6 +1672,15 @@
 			buildConfigurations = (
 				3DA9894FD05423CF41B52283F8DE621E /* Debug */,
 				960062716276F8B75712FC16C223F07A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5B4B2C075EE245FA6C099E17620DC5 /* Build configuration list for PBXNativeTarget "MQTTClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC98165F223C730AC8ADB56F1670EC68 /* Debug */,
+				F5F5C6781D1FEDA7353F7C9F5E82D319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

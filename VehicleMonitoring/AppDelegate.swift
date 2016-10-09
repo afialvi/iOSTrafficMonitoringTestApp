@@ -9,6 +9,9 @@
 import UIKit
 import BMSCore
 import BMSSecurity
+import GoogleMaps
+import GoogleMapsCore
+import MQTTKit
 
 
 @UIApplicationMain
@@ -18,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let backendURL = "https://alvi-app.mybluemix.net/"
     let backendGUID = "37f8eebf-7879-4f8f-a1ad-d1874f432d71"
     let tenantId = "37f8eebf-7879-4f8f-a1ad-d1874f432d71"
-    
+    static var client: MQTTClient?
 //    let backendGUID = "5e95097d-ad76-4712-9ba7-f741e716e107"
 //    let tenantId = "5e95097d-ad76-4712-9ba7-f741e716e107"
 
@@ -40,19 +43,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mcaAuthManager.initialize(tenantId: tenantId)
         BMSClient.sharedInstance.authorizationManager = mcaAuthManager
         BMSClient.sharedInstance.authorizationManager = MCAAuthorizationManager.sharedInstance
-
-//        let customResourceURL = backendURL+"/protected"
-//        print(customResourceURL)
-//        let request = Request(url: customResourceURL, method: HttpMethod.GET)
-//        let callBack:BMSCompletionHandler = {(response: Response?, error: NSError?) in
-//            if error == nil {
-//                print ("response: \(response?.responseText), no error")
-//            } else {
-//                print ("error: \(error)")
-//            }
-//        }
-//        
-//        request.send(completionHandler: callBack)
+        
+        GMSServices.provideAPIKey("AIzaSyAnSjuj4yt3ABQXg1o4t2tFPMv_e5HwZlA")
+        
+        connectToIoT()
+       
+        
         
         return true
     }
@@ -79,6 +75,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func connectToIoT(){
+        //        self.loadingView?.hidden = false
+        let msgingurl = "yap355.messaging.internetofthings.ibmcloud.com"
+        let cid = "a:yap355:myios"
+        //                let client: MQTTClient = MQTTClient(clientId: "37f8eebf-7879-4f8f-a1ad-d1874f432d71")
+        AppDelegate.client = MQTTClient(clientId: cid)
+        AppDelegate.client!.username = "a-yap355-rfxqfekzd8"
+        AppDelegate.client!.password = "JLumfw?Y8AAr7aX!7z"
+        AppDelegate.client!.port = 1883
+        
+        AppDelegate.client!.connectToHost(msgingurl) { (MQTTConnectionReturnCode) in
+            if(MQTTConnectionReturnCode == ConnectionAccepted){
+                
+                print("Connection Accepted")
+                
+            }
+            else{
+                
+                print("Connection Not Accepted: \(MQTTConnectionReturnCode)")
+                
+            }
+        }
+    }
+    
 }
 

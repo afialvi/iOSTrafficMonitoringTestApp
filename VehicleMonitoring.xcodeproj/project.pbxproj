@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B118C341DAA5AF3004BC8FB /* redcar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B118C331DAA5AF3004BC8FB /* redcar@3x.png */; };
+		2B118C371DAA5CB8004BC8FB /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B118C361DAA5CB8004BC8FB /* Vehicle.swift */; };
 		2B53CC2D1DA04BD40033FF14 /* objclib-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B53CC2C1DA04BD40033FF14 /* objclib-Bridging-Header.m */; };
+		2B912E9C1DA6EBDC00F0499C /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B912E9A1DA6EBDC00F0499C /* GoogleMapsViewController.swift */; };
+		2B912E9D1DA6EBDC00F0499C /* GoogleMapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B912E9B1DA6EBDC00F0499C /* GoogleMapsViewController.xib */; };
 		2BC5DAD41DA145F2005FA3BC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5DAD21DA145F2005FA3BC /* MapViewController.swift */; };
 		2BC5DAD51DA145F2005FA3BC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC5DAD31DA145F2005FA3BC /* MapViewController.xib */; };
 		2BC5DAD81DA146B2005FA3BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5DAD61DA146B2005FA3BC /* MainViewController.swift */; };
@@ -42,8 +46,12 @@
 
 /* Begin PBXFileReference section */
 		15496A78DB930F0A0502EA31 /* Pods-VehicleMonitoring.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleMonitoring.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleMonitoring/Pods-VehicleMonitoring.debug.xcconfig"; sourceTree = "<group>"; };
+		2B118C331DAA5AF3004BC8FB /* redcar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redcar@3x.png"; sourceTree = "<group>"; };
+		2B118C361DAA5CB8004BC8FB /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		2B53CC2B1DA04BD40033FF14 /* VehicleMonitoring-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VehicleMonitoring-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B53CC2C1DA04BD40033FF14 /* objclib-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "objclib-Bridging-Header.m"; sourceTree = "<group>"; };
+		2B912E9A1DA6EBDC00F0499C /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
+		2B912E9B1DA6EBDC00F0499C /* GoogleMapsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoogleMapsViewController.xib; sourceTree = "<group>"; };
 		2BC5DAD21DA145F2005FA3BC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2BC5DAD31DA145F2005FA3BC /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		2BC5DAD61DA146B2005FA3BC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -100,9 +108,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2B118C321DAA5ACD004BC8FB /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				2B118C331DAA5AF3004BC8FB /* redcar@3x.png */,
+			);
+			name = imgs;
+			sourceTree = "<group>";
+		};
+		2B6BC47B1DA92D73001A4C23 /* cpp-client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "cpp-client";
+			sourceTree = "<group>";
+		};
 		2BFBE2231D9F292F00172A64 = {
 			isa = PBXGroup;
 			children = (
+				2B6BC47B1DA92D73001A4C23 /* cpp-client */,
 				2BFBE25F1D9F297600172A64 /* Podfile */,
 				2BFBE22E1D9F292F00172A64 /* VehicleMonitoring */,
 				2BFBE2431D9F292F00172A64 /* VehicleMonitoringTests */,
@@ -126,6 +150,7 @@
 		2BFBE22E1D9F292F00172A64 /* VehicleMonitoring */ = {
 			isa = PBXGroup;
 			children = (
+				2B118C321DAA5ACD004BC8FB /* imgs */,
 				2BFBE22F1D9F292F00172A64 /* AppDelegate.swift */,
 				2BFBE2311D9F292F00172A64 /* ViewController.swift */,
 				2BFBE2331D9F292F00172A64 /* Main.storyboard */,
@@ -138,6 +163,9 @@
 				2BC5DAD31DA145F2005FA3BC /* MapViewController.xib */,
 				2BC5DAD61DA146B2005FA3BC /* MainViewController.swift */,
 				2BC5DAD71DA146B2005FA3BC /* MainViewController.xib */,
+				2B912E9A1DA6EBDC00F0499C /* GoogleMapsViewController.swift */,
+				2B912E9B1DA6EBDC00F0499C /* GoogleMapsViewController.xib */,
+				2B118C361DAA5CB8004BC8FB /* Vehicle.swift */,
 			);
 			path = VehicleMonitoring;
 			sourceTree = "<group>";
@@ -278,9 +306,11 @@
 			files = (
 				2BFBE23A1D9F292F00172A64 /* LaunchScreen.storyboard in Resources */,
 				2BC5DAD51DA145F2005FA3BC /* MapViewController.xib in Resources */,
+				2B912E9D1DA6EBDC00F0499C /* GoogleMapsViewController.xib in Resources */,
 				2BFBE2371D9F292F00172A64 /* Assets.xcassets in Resources */,
 				2BFBE2601D9F297600172A64 /* Podfile in Resources */,
 				2BC5DAD91DA146B2005FA3BC /* MainViewController.xib in Resources */,
+				2B118C341DAA5AF3004BC8FB /* redcar@3x.png in Resources */,
 				2BFBE2351D9F292F00172A64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +386,9 @@
 			files = (
 				2BFBE2321D9F292F00172A64 /* ViewController.swift in Sources */,
 				2B53CC2D1DA04BD40033FF14 /* objclib-Bridging-Header.m in Sources */,
+				2B912E9C1DA6EBDC00F0499C /* GoogleMapsViewController.swift in Sources */,
 				2BC5DAD81DA146B2005FA3BC /* MainViewController.swift in Sources */,
+				2B118C371DAA5CB8004BC8FB /* Vehicle.swift in Sources */,
 				2BC5DAD41DA145F2005FA3BC /* MapViewController.swift in Sources */,
 				2BFBE2301D9F292F00172A64 /* AppDelegate.swift in Sources */,
 			);

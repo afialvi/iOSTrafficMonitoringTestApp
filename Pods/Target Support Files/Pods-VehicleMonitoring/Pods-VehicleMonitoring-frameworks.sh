@@ -87,11 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BMSAnalyticsAPI/BMSAnalyticsAPI.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BMSCore/BMSCore.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BMSSecurity/BMSSecurity.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MQTTClient/MQTTClient.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MQTTKit/MQTTKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BMSAnalyticsAPI/BMSAnalyticsAPI.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BMSCore/BMSCore.framework"
   install_framework "$BUILT_PRODUCTS_DIR/BMSSecurity/BMSSecurity.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MQTTClient/MQTTClient.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MQTTKit/MQTTKit.framework"
 fi
